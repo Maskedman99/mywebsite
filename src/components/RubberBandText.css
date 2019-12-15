@@ -1,0 +1,13 @@
+div {
+  white-space: pre;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  cursor: default;
+  font-family: "Cabin Sketch", cursive;
+  font-size: larger;
+}
+
+.RubberBand:hover {
+  color: greenyellow;
+}

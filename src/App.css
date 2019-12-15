@@ -1,0 +1,45 @@
+.App {
+  min-height: 100vh;
+  min-width: 100vw;
+  color: white;
+  background-color: #282c34;
+}
+
+.App-header {
+  flex: auto;
+}
+
+.App-header-div {
+  display: flex;
+  text-align: center;
+  flex-direction: row;
+  align-items: baseline;
+}
+
+.Title {
+  font-family: "Exo 2", sans-serif;
+  font-weight: bold;
+  font-size: x-large;
+  flex-grow: 1;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.App-header-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-grow: 1;
+  font-family: "Roboto", sans-serif;
+  font-size: medium;
+}
+
+.Links:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.App-main {
+  flex-direction: row;
+  justify-content: center;
+}
