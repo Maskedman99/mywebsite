@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import MainLogo from './components/MainLogo'
 import RubberBandText from './components/RubberBandText'
 
 function App() {
@@ -17,9 +18,7 @@ function App() {
         </div>
        
         <main className="App-main">
-        <svg>   
-          <circle cx="200" cy="200" r="50" stroke="black" stroke-width="5" fill="silver"/>
-        </svg>
+        <MainLogo />
         <div className="App-main-text">
         <RubberBandText text=" Hi, I'm Rohit. I create websites and mobile apps for fun  :)  "/>
         </div>
