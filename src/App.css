@@ -3,13 +3,13 @@
   min-width: 100vw;
   color: white;
   background-color: #282c34;
+  justify-content: center;
 }
 
 .App-header-div {
   display: flex;
   text-align: center;
   flex-direction: row;
-  align-items: baseline;
 }
 
 .Title {
@@ -37,10 +37,5 @@
 
 .App-main {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-.App-main-text {
-  display: flex;
+  margin-top: 5%;
 }

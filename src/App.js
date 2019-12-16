@@ -17,12 +17,11 @@ function App() {
           </div>
         </div>
        
-        <main className="App-main">
+        <main className="App-main"> 
         <MainLogo />
         <div className="App-main-text">
-        <RubberBandText text=" Hi, I'm Rohit. "/>
-        <RubberBandText text="I create websites and "/>
-        <RubberBandText text="mobile apps for fun  :)  "/>
+        <RubberBandText text="Hi, I'm Rohit. I create websites "/>
+        <RubberBandText text="and mobile apps for fun  :)  "/>
         </div>
       </main>
       </header>
