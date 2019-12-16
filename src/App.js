@@ -20,7 +20,9 @@ function App() {
         <main className="App-main">
         <MainLogo />
         <div className="App-main-text">
-        <RubberBandText text=" Hi, I'm Rohit. I create websites and mobile apps for fun  :)  "/>
+        <RubberBandText text=" Hi, I'm Rohit. "/>
+        <RubberBandText text="I create websites and "/>
+        <RubberBandText text="mobile apps for fun  :)  "/>
         </div>
       </main>
       </header>

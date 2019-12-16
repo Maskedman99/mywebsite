@@ -1,11 +1,12 @@
 div {
   white-space: pre;
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: flex-end;
   cursor: default;
   font-family: "Cabin Sketch", cursive;
   font-size: larger;
+  align-self: center;
 }
 
 .RubberBand:hover {
