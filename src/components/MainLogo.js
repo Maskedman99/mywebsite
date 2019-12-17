@@ -7,7 +7,7 @@ class MainLogo extends Component {
     {
         return(
             <div class="svg-container">  
-            <svg xmlns="http://www.w3.org/2000/svg" x="10in" y="10in" viewBox="-100 0 500 300">
+            <svg xmlns="http://www.w3.org/2000/svg" x="10in" y="10in" viewBox="-75 0 500 300">
         <path id="OuterR"
         fill="none" stroke="orange" stroke-width="2"
         d="M 123.00,231.00
