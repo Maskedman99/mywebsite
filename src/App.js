@@ -1,29 +1,32 @@
 import React from 'react';
+import {BrowserRouter, Route, Link} from 'react-router-dom'
+
 import './App.css';
-import MainLogo from './components/MainLogo'
-import RubberBandText from './components/RubberBandText'
+
+import Main from './screens/Main'
+import About from './screens/About'
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
+
+        <BrowserRouter>
         <div className="App-header-div">
-          <p className="Title">ROHIT PRASAD</p>
+              <Link to="/" className="Title">ROHIT PRASAD</Link>
           <div className="App-header-links">
-              <p className="Links">ABOUT</p>
-              <p className="Links">PROTFOLIO</p>
-              <p className="Links">ARTICLES</p>
-              <p className="Links">PROJECTS</p>
+              <Link to="/about" className="Links">ABOUT</Link>
+              <Link to="/protfolio" className="Links">PROTFOLIO</Link>
+              <Link to="/articles" className="Links">ARTICLES</Link>
+              <Link to="/projects" className="Links">PROJECTS</Link>
           </div>
         </div>
+
+          <Route path="/" exact component={Main} />
+          <Route path="/about" exact component={About} />
+
+        </BrowserRouter>
        
-        <main className="App-main"> 
-        <MainLogo />
-        <div className="App-main-text">
-        <RubberBandText text="Hi, I'm Rohit. I create websites "/>
-        <RubberBandText text="and mobile apps for fun  :)  "/>
-        </div>
-      </main>
       </header>
     </div>
   );

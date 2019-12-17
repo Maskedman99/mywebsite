@@ -11,10 +11,12 @@ class RubberBandText extends React.Component {
         const arr = this.props.text.split("");
 
         return(
-        <div>
+        <div className="RubberBandDiv">
         {
             arr.map((item, key)=>(
-                <Rotate><RubberBand className="RubberBand"><p>{item}</p></RubberBand></Rotate>
+                <Rotate><RubberBand className="RubberBand">
+                {item}
+                </RubberBand></Rotate>
             ))
         }
         </div>

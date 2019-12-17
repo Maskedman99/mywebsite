@@ -1,21 +1,29 @@
 .App {
-  min-height: 100vh;
-  min-width: 100vw;
+  display: flex;
   color: white;
   background-color: #282c34;
   justify-content: center;
+}
+
+.App-header {
+  min-height: 100vh;
+  min-width: 100vw;
 }
 
 .App-header-div {
   display: flex;
   text-align: center;
   flex-direction: row;
+  margin-top: 2%;
+  margin-bottom: 2%;
 }
 
 .Title {
   font-family: "Exo 2", sans-serif;
   font-weight: bold;
   font-size: x-large;
+  color: white;
+  text-decoration: none;
   flex-grow: 1;
   justify-content: center;
   cursor: pointer;
@@ -30,12 +38,12 @@
   font-size: medium;
 }
 
+.Links {
+  color: white;
+  text-decoration: none;
+}
+
 .Links:hover {
   cursor: pointer;
   text-decoration: underline;
-}
-
-.App-main {
-  display: flex;
-  margin-top: 5%;
 }
