@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import MainLogo from '../components/MainLogo'
 import RubberBandText from '../components/RubberBandText'
 
-import './Main.css';
 
 class Main extends Component {
     render() {
