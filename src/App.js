@@ -1,17 +1,19 @@
 import React from 'react';
-import {BrowserRouter, Route, Link} from 'react-router-dom'
+import {Route, Link, Switch, withRouter} from 'react-router-dom'
+import { CSSTransition, TransitionGroup } from "react-transition-group";
+///import { AnimatedSwitch, spring } from 'react-router-transition';
 
 import './App.css';
 
 import Main from './screens/Main'
 import About from './screens/About'
 
-function App() {
+function App ({location}){
+
   return (
     <div className="App">
       <header className="App-header">
 
-        <BrowserRouter>
         <div className="App-header-div">
               <Link to="/" className="Title">ROHIT PRASAD</Link>
           <div className="App-header-links">
@@ -21,15 +23,26 @@ function App() {
               <Link to="/projects" className="Links">PROJECTS</Link>
           </div>
         </div>
+  
 
+        <TransitionGroup className="transition-group">
+        <CSSTransition
+          key={location.key}
+          timeout={{ enter: 0, exit: 1500 }}
+          classNames="fade"
+        >
+         <section className="route-section">
+            <Switch location={location}>
           <Route path="/" exact component={Main} />
           <Route path="/about" exact component={About} />
-
-        </BrowserRouter>
-       
+          </Switch>
+          </section>
+        </CSSTransition>
+        </TransitionGroup>
+   
       </header>
     </div>
-  );
-}
+    );
+  }
 
-export default App;
+export default withRouter(App);
