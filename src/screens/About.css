@@ -1,9 +1,10 @@
 .About-main {
   background-color: #4282c3;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   flex-direction: column;
+  padding-top: 5vh;
 }
 
 .About-title {
