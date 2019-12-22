@@ -7,7 +7,7 @@ import './App.css';
 import Main from './screens/Main'
 import About from './screens/About'
 
-function App ({location}){
+function App ({location, history}){
 
   return (
     <div className="App">
@@ -22,13 +22,15 @@ function App ({location}){
               <Link to="/projects" className="Links">PROJECTS</Link>
           </div>
         </div>
-  
+        
+        {console.log(location)}
+        {console.log(history)}
 
         <TransitionGroup className="transition-group">
         <CSSTransition
           key={location.key}
-          timeout={{ enter: 1500, exit: 1500 }}
-          classNames="fade"
+          timeout={{ enter: 2000, exit: 2000 }}
+          classNames={ history.action === 'PUSH' ? 'slide': 'slide-back' }
         >
          <section className="route-section">
             <Switch location={location}>
