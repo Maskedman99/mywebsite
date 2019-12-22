@@ -3,7 +3,25 @@
   color: white;
   background-color: #282c34;
   justify-content: center;
+  overflow-x: hidden;
 }
+
+/*          CUSTOMIZING SCROLL BAR DOES'NT WORK IN FIREFOX*/
+
+.App::-webkit-scrollbar {
+  width: 1em;
+}
+
+.App::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.App::-webkit-scrollbar-thumb {
+  background-color: rgb(0, 0, 0);
+  outline: 1px solid slategrey;
+}
+
+/*          VIEWS*/
 
 .App-header {
   min-height: 100vh;
@@ -48,6 +66,8 @@
   text-decoration: underline;
 }
 
+/*            SLIDE ANIMATION ON ROUTER*/
+
 .fade-enter {
   transform: translate(100%);
 }
@@ -72,7 +92,7 @@ div.transition-group {
 
 section.route-section {
   position: absolute;
-  width: 100%;
+  width: 100vw;
   top: 0;
   left: 0;
 }

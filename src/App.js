@@ -1,7 +1,6 @@
 import React from 'react';
 import {Route, Link, Switch, withRouter} from 'react-router-dom'
 import { CSSTransition, TransitionGroup } from "react-transition-group";
-///import { AnimatedSwitch, spring } from 'react-router-transition';
 
 import './App.css';
 
@@ -28,7 +27,7 @@ function App ({location}){
         <TransitionGroup className="transition-group">
         <CSSTransition
           key={location.key}
-          timeout={{ enter: 0, exit: 1500 }}
+          timeout={{ enter: 1500, exit: 1500 }}
           classNames="fade"
         >
          <section className="route-section">
