@@ -6,6 +6,7 @@ import './App.css';
 
 import Main from './screens/Main'
 import About from './screens/About'
+import Projects from './screens/Projects'
 
 function App ({location, history}){
 
@@ -30,12 +31,13 @@ function App ({location, history}){
         <CSSTransition
           key={location.key}
           timeout={{ enter: 2000, exit: 2000 }}
-          classNames={ history.action === 'PUSH' ? 'slide': 'slide-back' }
+          classNames={ 'slide'}// history.action === 'PUSH' ? 'slide': 'slide-back' }
         >
          <section className="route-section">
             <Switch location={location}>
           <Route path="/" exact component={Main} />
           <Route path="/about" exact component={About} />
+          <Route path="/projects" exact component={Projects} />
           </Switch>
           </section>
         </CSSTransition>
