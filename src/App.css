@@ -61,11 +61,15 @@
 .Links {
   color: white;
   text-decoration: none;
+  transition: color ls ease-in;
+  -webkit-transition: color 1s ease-in; /*safari and chrome */
+  -moz-transition: color 1s ease-in; /* firefox */
 }
 
 .Links:hover {
   cursor: pointer;
   text-decoration: underline;
+  color: aqua;
 }
 
 /*            SLIDE ANIMATION ON ROUTER*/
