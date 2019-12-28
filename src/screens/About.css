@@ -30,6 +30,13 @@ p {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  align-items: center;
   position: absolute;
   bottom: 5vh;
+}
+
+.About-links {
+  text-decoration: none;
+  color: white;
+  font-size: small;
 }

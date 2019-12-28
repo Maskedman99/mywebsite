@@ -23,9 +23,6 @@ function App ({location, history}){
               <Link to="/projects" className="Links">PROJECTS</Link>
           </div>
         </div>
-        
-        {console.log(location)}
-        {console.log(history)}
 
         <TransitionGroup className="transition-group">
         <CSSTransition
