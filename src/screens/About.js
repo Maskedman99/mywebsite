@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+import Pyramid from '../components/Pyramid';
+
 import Pic from '../assets/Rcolor.png'
 import github from '../assets/github.svg'
 import linkedin from '../assets/linkedin.svg'
@@ -19,6 +21,7 @@ class About extends Component {
                         <p>cdskmcke</p>
                         <p>cdnskaufhomejruamcboxirwmct</p>
                 </div>
+                <Pyramid />
                 <div className="About-footer">
                     <p>Contact me: </p>
                     <a className="About-links" target="_blank" rel="noopener noreferrer" 
