@@ -42,38 +42,39 @@
 }
 
 #pyramid > div:first-child {
-  border-color: transparent transparent transparent rgba(217, 255, 0, 0.4);
+  border-color: transparent transparent transparent rgba(112, 112, 108, 0.4);
   transform: rotateY(-19.5deg) rotateX(180deg) translateY(-400px);
 }
 
 #pyramid > div:nth-child(2) {
-  border-color: transparent transparent transparent rgba(217, 255, 0, 0.4);
+  border-color: transparent transparent transparent rgba(112, 112, 108, 04);
   transform: rotateY(90deg) rotateZ(60deg) rotateX(180deg) translateY(-400px);
 }
 
 #pyramid > div:nth-child(3) {
-  border-color: transparent transparent transparent rgba(217, 255, 0, 0.6);
+  border-color: transparent transparent transparent rgba(112, 112, 108, 0.6);
   transform: rotateX(60deg) rotateY(19.5deg);
 }
 
 #pyramid > div:nth-child(4) {
-  border-color: transparent transparent transparent rgba(217, 255, 0, 0.6);
+  border-color: transparent transparent transparent rgba(112, 112, 108, 0.6);
   transform: rotateX(-60deg) rotateY(19.5deg) translateX(-116px)
     translateY(-200px) translateZ(326px);
 }
 
 #pyramid > div:first-child::after {
   position: absolute;
-  content: url(https://jacekjeznach.com/wp-content/themes/jj/css/../img/logo1.png);
+  content: url(../assets/html5.png);
 }
 
 #pyramid > div:nth-child(2)::after {
   position: absolute;
-  content: url(https://jacekjeznach.com/wp-content/themes/jj/css/../img/logo2.png);
+  content: url(../assets/css.png);
 }
 
 #pyramid > div:nth-child(3)::after {
   position: absolute;
+  content: url(../assets/js.png);
 }
 
 #pyramid > div:nth-child(4)::after {
