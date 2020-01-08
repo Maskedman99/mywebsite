@@ -1,8 +1,16 @@
 .Projects-main {
   background-color: #4caf50;
   min-height: 100vh;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  padding-top: 5vh;
+  padding: 1vw;
+}
+
+.grid-container {
+  display: grid;
+  justify-content: stretch;
+  grid-template-columns: 33vw 33vw 33vw;
+  grid-template-rows: 45vh 45vh 45vh;
+  grid-column-gap: 0.33vw;
+  grid-row-gap: 0.33vh;
+  justify-items: stretch;
+  align-items: stretch;
 }
