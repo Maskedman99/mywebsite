@@ -1,0 +1,23 @@
+#Orbit1 {
+  stroke-dasharray: 500;
+  stroke-dashoffset: 1000;
+  animation: dash 2s linear forwards infinite;
+}
+
+#Orbit2 {
+  stroke-dasharray: 500;
+  stroke-dashoffset: 1000;
+  animation: dash 2s linear forwards infinite;
+}
+
+#Orbit3 {
+  stroke-dasharray: 500;
+  stroke-dashoffset: 1000;
+  animation: dash 2s linear forwards infinite;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
