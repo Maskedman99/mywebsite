@@ -14,13 +14,6 @@ class Projects extends Component {
                 <div class="grid-container">
                     <ProjectGrid image={Project1}/>
                     <ProjectGrid image={Project2}/>
-                    <div class="grid-item">3</div>
-                    <div class="grid-item">4</div>
-                    <div class="grid-item">5</div>
-                    <div class="grid-item">6</div>
-                    <div class="grid-item">7</div>
-                    <div class="grid-item">8</div>
-                    <div class="grid-item">9</div>
                 </div> 
             </div>    
         )
