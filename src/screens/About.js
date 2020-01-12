@@ -50,6 +50,11 @@ class About extends Component {
                         <img className="About-image" src={envelope} alt=""/>
                         E-mail
                     </a>
+                    <a className="About-links" target="_blank" rel="noopener noreferrer" 
+                                    href="https://sourcerer.io/maskedman99">
+                       <img className="About-image" src="https://sourcerer.io/icons/logo-sharing.svg" alt=""/>                        
+                        Sourcerer     
+                    </a>
                 </div>
             </div>    
         )
