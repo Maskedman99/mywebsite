@@ -8,6 +8,7 @@ import github from '../assets/github.svg'
 import linkedin from '../assets/linkedin.svg'
 import envelope from '../assets/envelope.svg'
 import codepen from '../assets/codepen.svg'
+import sourcerer from '../assets/sourcerer.svg'
 
 import "./About.css"
 
@@ -52,7 +53,7 @@ class About extends Component {
                     </a>
                     <a className="About-links" target="_blank" rel="noopener noreferrer" 
                                     href="https://sourcerer.io/maskedman99">
-                       <img className="About-image" src="https://sourcerer.io/icons/logo-sharing.svg" alt=""/>                        
+                       <img className="About-image" src={sourcerer} alt=""/>                        
                         Sourcerer     
                     </a>
                 </div>
