@@ -2,7 +2,7 @@ import React from 'react';
 import {Route, Link, Switch, withRouter} from 'react-router-dom'
 import { CSSTransition, TransitionGroup } from "react-transition-group";
 
-import './App.css';
+import './css/App.css';
 
 import Main from './screens/Main'
 import About from './screens/About'
