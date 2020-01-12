@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import MainLogo from '../components/MainLogo';
 
-import './Main.css';
+import '../css/Main.css';
 
 class Main extends Component {
     render() {

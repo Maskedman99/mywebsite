@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './Pyramid.css'
+import '../css/Pyramid.css'
 
 class Pyramid extends React.Component{
     render() {

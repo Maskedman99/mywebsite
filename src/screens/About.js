@@ -10,7 +10,7 @@ import envelope from '../assets/envelope.svg'
 import codepen from '../assets/codepen.svg'
 import sourcerer from '../assets/sourcerer.svg'
 
-import "./About.css"
+import "../css/About.css"
 
 class About extends Component {
     render() {

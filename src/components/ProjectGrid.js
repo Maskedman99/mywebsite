@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import './ProjectGrid.css'
+import '../css/ProjectGrid.css'
 
 class ProjectGrid extends Component {
     render() {

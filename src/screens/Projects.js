@@ -5,7 +5,7 @@ import ProjectGrid from '../components/ProjectGrid';
 import Project1 from '../assets/libgen.svg';
 import Project2 from '../assets/mec.svg'
 
-import "./Projects.css"
+import "../css/Projects.css"
 
 class Projects extends Component {
     render() {
