@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import MainLogo from '../components/MainLogo'
-import RubberBandText from '../components/RubberBandText'
+import MainLogo from '../components/MainLogo';
 
+import './Main.css';
 
 class Main extends Component {
     render() {
@@ -9,8 +9,7 @@ class Main extends Component {
             <div className="App-main">
                 <MainLogo />
                 <div className="App-main-text">
-                    <RubberBandText text="Hi, I'm Rohit. I create websites "/>
-                    <RubberBandText text="and mobile apps for fun  :)  "/>
+                    Hi, I'm Rohit. I create websites and mobile apps for fun 
                 </div>
           </div>
         )

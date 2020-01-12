@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class ReactLogo extends Component {
     render(){
         return(
-            <div class="svg-container">
+            <div class="svg-container" style={{minWidth: "50vw"}}>
                 <svg version="1.1" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 640 640" width="425" height="425">
 
                     <defs>

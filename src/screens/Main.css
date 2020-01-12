@@ -1,0 +1,17 @@
+.App-main {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  margin: 1vw;
+  min-height: 70vh;
+}
+
+.App-main-text {
+  font-family: "Cabin Sketch", cursive;
+  font-weight: lighter;
+  font-size: 6vh;
+  display: flex;
+  align-items: center;
+  text-align: end;
+  cursor: default;
+}

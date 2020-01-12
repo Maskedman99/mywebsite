@@ -1,6 +1,6 @@
 .svg-container {
   align-items: stretch;
-  max-width: 60vw;
+  min-width: 60vw;
   height: 30vh;
 }
 
