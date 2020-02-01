@@ -1,7 +1,30 @@
 .ProjectGrid-main {
   background-color: #282c34;
+  border-radius: 0.5vw;
   display: flex;
   justify-content: center;
+  cursor: default;
+  overflow: hidden;
+}
+
+.ProjectGrid-Image {
+  display: flex;
+  flex: 1;
+  height: 100%;
   align-items: center;
+  justify-content: center;
+}
+
+.ProjectGrid-details {
+  width: 0%;
+  height: 100%;
+  color: transparent;
+  transition: width 1s ease-in-out;
+}
+
+.ProjectGrid-main :hover ~ .ProjectGrid-details {
+  color: white;
+  width: 100%;
   border-radius: 0.5vw;
+  background-color: rgba(0, 128, 128, 0.8);
 }
