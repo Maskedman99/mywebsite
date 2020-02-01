@@ -4,7 +4,6 @@ import '../css/ProjectGrid.css'
 
 class ProjectGrid extends Component {
     render() {
-        console.log(this.props.image);
         return(
             <div className='ProjectGrid-main'>
                 <div className='ProjectGrid-Image'>
@@ -12,7 +11,13 @@ class ProjectGrid extends Component {
                 </div>
                 <div className='ProjectGrid-details'>
                     <h1>{this.props.title}</h1>
-                    <p>{this.props.desc}</p>
+                    <p>{this.props.desc}</p> <br/>
+                    <p>Made Using: {this.props.mu}</p> <br/>
+                    <a href={this.props.sc}>Source Code</a> <br/>
+                    {this.props.link === undefined ?
+                        (<div></div>) :
+                        (<a href={this.props.link}>Live Link</a>)
+                    }
                 </div>
             </div>
         );
