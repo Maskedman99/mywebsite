@@ -12,8 +12,8 @@ class Projects extends Component {
         return(
             <div className="Projects-main">
                 <div class="grid-container">
-                    <ProjectGrid image={Project1}/>
-                    <ProjectGrid image={Project2}/>
+                    <ProjectGrid image={Project1} title="LibGen" desc="An app to Library Genesis" />
+                    <ProjectGrid image={Project2} title="MEC" desc="App to find attendance" />
                 </div> 
             </div>    
         )
