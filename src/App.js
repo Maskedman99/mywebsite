@@ -4,9 +4,10 @@ import { CSSTransition, TransitionGroup } from "react-transition-group";
 
 import './css/App.css';
 
-import Main from './screens/Main'
-import About from './screens/About'
-import Projects from './screens/Projects'
+import Main from './screens/Main';
+import About from './screens/About';
+import Projects from './screens/Projects';
+import Articles from './screens/Articles';
 
 function App ({location, history}){
 
@@ -34,6 +35,7 @@ function App ({location, history}){
             <Switch location={location}>
           <Route path="/" exact component={Main} />
           <Route path="/about" exact component={About} />
+          <Route path="/articles" exact component={Articles} />
           <Route path="/projects" exact component={Projects} />
           </Switch>
           </section>
