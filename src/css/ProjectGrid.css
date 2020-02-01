@@ -24,9 +24,21 @@
   background-color: rgba(0, 128, 128, 0.8);
   right: -100%;
   transition: 0.5s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .ProjectGrid-main:hover .ProjectGrid-details {
   right: 0px;
   transition: 0.5s;
+}
+
+a {
+  color: yellow;
+  font-weight: bold;
+}
+
+p {
+  align-self: flex-start;
 }
