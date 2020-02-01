@@ -11,7 +11,7 @@ class Projects extends Component {
     render() {
         return(
             <div className="Projects-main">
-                <div class="grid-container">
+                <div className="grid-container">
                     <ProjectGrid image={Project1} title="LibGen" desc="An app to Library Genesis" />
                     <ProjectGrid image={Project2} title="MEC" desc="App to find attendance" />
                 </div> 
