@@ -6,10 +6,10 @@ class MainLogo extends Component {
     render()
     {
         return(
-            <div class="svg-container">  
+            <div className="svg-container">  
             <svg xmlns="http://www.w3.org/2000/svg" x="10in" y="10in" viewBox="-75 0 500 300">
         <path id="OuterR"
-        fill="none" stroke="orange" stroke-width="2"
+        fill="none" stroke="orange" strokeWidth="2"
         d="M 123.00,231.00
            C 129.84,233.18 131.97,236.54 138.00,239.63
              138.00,239.63 172.00,253.81 172.00,253.81
@@ -42,7 +42,7 @@ class MainLogo extends Component {
              105.24,255.40 114.38,257.56 120.57,249.90
              124.11,245.51 123.00,236.51 123.00,231.00 Z"/>
         <path id="InnerR"
-        fill="none" stroke="orange" stroke-width="2"
+        fill="none" stroke="orange" strokeWidth="2"
         d="M 204.00,245.00
            C 204.00,245.00 185.00,246.17 185.00,246.17
              180.79,246.57 177.84,247.89 174.21,244.69
@@ -76,7 +76,7 @@ class MainLogo extends Component {
              189.19,195.00 197.15,224.00 197.15,224.00
              197.15,224.00 204.00,245.00 204.00,245.00 Z"/>
         <path id="InnerInnerR"
-        fill="none" stroke="orange" stroke-width="2"
+        fill="none" stroke="orange" strokeWidth="2"
         d="M 131.13,90.97
            C 126.29,95.09 127.00,100.05 126.28,106.00
              126.28,106.00 123.00,140.00 123.00,140.00
@@ -87,7 +87,7 @@ class MainLogo extends Component {
              166.49,95.74 155.21,92.47 146.00,90.97
              140.90,90.06 136.11,89.26 131.13,90.97 Z"/>
         <path id="Blocks"
-        fill="none" stroke="green" stroke-width="1"    
+        fill="none" stroke="green" strokeWidth="1"    
         d="M 113.00,60.00
            C 98.72,65.20 93.60,54.97 83.00,47.16
              77.81,43.33 71.94,40.92 69.00,35.00
