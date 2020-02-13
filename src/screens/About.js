@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 import Pyramid from '../components/Pyramid';
 import ReactLogo from '../components/ReactLogo';
@@ -12,8 +12,7 @@ import sourcerer from '../assets/sourcerer.svg'
 
 import "../css/About.css"
 
-class About extends Component {
-    render() {
+const About = () => {
         return(
             <div className="About-main">
                 <img src={Pic} alt="" width="125vw" height="125vh"/>
@@ -60,6 +59,5 @@ class About extends Component {
             </div>    
         )
     }
-}
 
 export default About;

@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 import ProjectGrid from '../components/ProjectGrid';
 
@@ -7,8 +7,7 @@ import Project2 from '../assets/mec.svg'
 
 import "../css/Projects.css"
 
-class Projects extends Component {
-    render() {
+const Projects = () => {
         return(
             <div className="Projects-main">
                 <div className="grid-container">
@@ -29,6 +28,5 @@ class Projects extends Component {
             </div>    
         )
     }
-}
 
 export default Projects;

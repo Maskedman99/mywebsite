@@ -2,8 +2,7 @@ import React from 'react';
 
 import '../css/Pyramid.css'
 
-class Pyramid extends React.Component{
-    render() {
+const Pyramid = () => {
         return(
             <div className="pyramidWrap">
                 <section id="pyramid">
@@ -15,5 +14,5 @@ class Pyramid extends React.Component{
             </div>
         );
     }
-}
+    
 export default Pyramid;

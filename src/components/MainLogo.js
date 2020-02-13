@@ -1,10 +1,8 @@
-import React, { Component } from 'react';
+import React from 'react';
 import '../css/MainLogo.css';
 
 
-class MainLogo extends Component {
-    render()
-    {
+const MainLogo = () => {
         return(
             <div className="svg-container">  
             <svg xmlns="http://www.w3.org/2000/svg" x="10in" y="10in" viewBox="-75 0 500 300">
@@ -242,6 +240,5 @@ class MainLogo extends Component {
         </div>
         )
     }
-}
 
 export default MainLogo;
