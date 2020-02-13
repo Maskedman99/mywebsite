@@ -1,10 +1,9 @@
-import React, { Component } from 'react';
+import React from 'react';
 import MainLogo from '../components/MainLogo';
 
 import '../css/Main.css';
 
-class Main extends Component {
-    render() {
+const Main = () =>{
         return(
             <div className="App-main">
                 <MainLogo />
@@ -14,6 +13,5 @@ class Main extends Component {
           </div>
         )
     }
-}
 
 export default Main;

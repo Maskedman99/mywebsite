@@ -1,11 +1,9 @@
 import React from 'react';
 
-class Article extends React.Component {
-    render() {
+const Article = () => {
         return(
             <div>Aricle</div>
         );
     }
-}
 
 export default Article;

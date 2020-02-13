@@ -1,7 +1,6 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-class ReactLogo extends Component {
-    render(){
+const ReactLogo = () => {
         return(
             <div className="svg-container" style={{minWidth: "50vw"}}>
                 <svg version="1.1" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 640 640" width="425" height="425">
@@ -44,6 +43,5 @@ class ReactLogo extends Component {
             </div>
         );
     }
-}
 
 export default ReactLogo;
