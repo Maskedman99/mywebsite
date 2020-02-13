@@ -50,4 +50,5 @@ p {
   flex-direction: row;
   justify-content: space-between;
   width: 100vw;
+  height: 42vw;
 }
