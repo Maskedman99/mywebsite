@@ -8,6 +8,7 @@ import Main from './screens/Main';
 import About from './screens/About';
 import Projects from './screens/Projects';
 import Articles from './screens/Articles';
+import Protfolio from './screens/Protfolio'
 import NotFound404 from './screens/NotFound404';
 
 function App ({location, history}){
@@ -38,6 +39,7 @@ function App ({location, history}){
               <Route path="/about" exact component={About} />
               <Route path="/articles" exact component={Articles} />
               <Route path="/projects" exact component={Projects} />
+              <Route path="/protfolio" exact component={Protfolio} />
               <Route path="/404" component={NotFound404} />
               <Redirect to="/404" />
             </Switch>
