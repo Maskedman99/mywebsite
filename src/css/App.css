@@ -34,6 +34,7 @@
   display: flex;
   text-align: center;
   flex-direction: row;
+  max-height: 2vh;
   margin-top: 2%;
   margin-bottom: 2%;
 }
@@ -62,8 +63,6 @@
   color: white;
   text-decoration: none;
   transition: color ls ease-in;
-  -webkit-transition: color 1s ease-in; /*safari and chrome */
-  -moz-transition: color 1s ease-in; /* firefox */
 }
 
 .Links:hover {
