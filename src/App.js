@@ -1,5 +1,5 @@
 import React from 'react';
-import {Route, Link, Switch, withRouter} from 'react-router-dom'
+import {Route, Link, Switch, withRouter, Redirect} from 'react-router-dom'
 import { CSSTransition, TransitionGroup } from "react-transition-group";
 
 import './css/App.css';
@@ -8,6 +8,7 @@ import Main from './screens/Main';
 import About from './screens/About';
 import Projects from './screens/Projects';
 import Articles from './screens/Articles';
+import NotFound404 from './screens/NotFound404';
 
 function App ({location, history}){
 
@@ -33,11 +34,13 @@ function App ({location, history}){
         >
          <section className="route-section">
             <Switch location={location}>
-          <Route path="/" exact component={Main} />
-          <Route path="/about" exact component={About} />
-          <Route path="/articles" exact component={Articles} />
-          <Route path="/projects" exact component={Projects} />
-          </Switch>
+              <Route path="/" exact component={Main} />
+              <Route path="/about" exact component={About} />
+              <Route path="/articles" exact component={Articles} />
+              <Route path="/projects" exact component={Projects} />
+              <Route path="/404" component={NotFound404} />
+              <Redirect to="/404" />
+            </Switch>
           </section>
         </CSSTransition>
         </TransitionGroup>
