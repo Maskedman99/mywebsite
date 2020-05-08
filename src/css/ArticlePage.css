@@ -6,3 +6,11 @@
   border: 1px solid white;
   border-radius: 3px;
 }
+
+code:not([class]) {
+  display: inline-block;
+  padding: 1vh;
+  font-size: 90%;
+  background-color: rgb(0, 0, 0, 0.5);
+  border-radius: 3px;
+}

@@ -18,7 +18,7 @@ const ArticlePage = ({url}) => {
 
   useEffect(() => {
     axios
-      .get(url)
+      .get(`${url}1.md`)
       .then(response => setData(response.data))
       .catch(e => alert('Error', e.message));
   }, [url]);
