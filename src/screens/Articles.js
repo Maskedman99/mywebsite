@@ -1,15 +1,11 @@
 import React from 'react';
-import marked from 'marked';
-import DOMPurify from 'dompurify';
+
+import ArticlePage from '../components/ArticlePage';
 
 const Article = () => {
   return (
     <div>
-      <div
-        dangerouslySetInnerHTML={{
-          __html: DOMPurify.sanitize(marked('# Marked in the browser\n\nRendered by **marked**.'))
-        }}
-      />
+      <ArticlePage url={'https://raw.githubusercontent.com/Maskedman99/Iris-Flowers/master/1.md'}/>
     </div>
   );
 };
