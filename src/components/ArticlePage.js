@@ -2,9 +2,19 @@ import React, {useEffect, useState} from 'react';
 import marked from 'marked';
 import DOMPurify from 'dompurify';
 import axios from 'axios';
+import hljs from 'highlight.js/lib/core';
+import r from 'highlight.js/lib/languages/r';
+
+import 'highlight.js/styles/dracula.css';
+import '../css/ArticlePage.css';
+
+hljs.registerLanguage('r', r);
 
 const ArticlePage = ({url}) => {
   const [data, setData] = useState('');
+  let options = {
+    highlight: (code) => hljs.highlight('r', code).value
+  };
 
   useEffect(() => {
     axios
@@ -14,10 +24,10 @@ const ArticlePage = ({url}) => {
   }, [url]);
 
   return (
-    <div>
-      <div
+    <div className="Article-container">
+      <div className="Article-content"
         dangerouslySetInnerHTML={{
-          __html: DOMPurify.sanitize(marked(data))
+          __html: DOMPurify.sanitize(marked(data, options))
         }}
       />
     </div>
