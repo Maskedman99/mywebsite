@@ -8,13 +8,13 @@
 }
 
 .About-title {
-  font-family: "Cabin Sketch", cursive;
+  font-family: 'Cabin Sketch', cursive;
   font-weight: lighter;
   font-size: 7vh;
 }
 
 .About-text {
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
   font-size: large;
   text-align: center;
 }

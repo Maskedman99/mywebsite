@@ -55,8 +55,8 @@
 
 #pyramid > div:nth-child(4) {
   border-color: transparent transparent transparent rgba(112, 112, 108, 0.6);
-  transform: rotateX(-60deg) rotateY(19.5deg) translateX(-116px)
-    translateY(-200px) translateZ(326px);
+  transform: rotateX(-60deg) rotateY(19.5deg) translateX(-116px) translateY(-200px)
+    translateZ(326px);
 }
 
 #pyramid > div:first-child::after {
