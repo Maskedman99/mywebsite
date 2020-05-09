@@ -13,7 +13,7 @@ hljs.registerLanguage('r', r);
 const ArticlePage = ({url}) => {
   const [data, setData] = useState('');
   let options = {
-    highlight: (code) => hljs.highlight('r', code).value
+    highlight: code => hljs.highlight('r', code).value
   };
 
   useEffect(() => {
@@ -25,7 +25,8 @@ const ArticlePage = ({url}) => {
 
   return (
     <div className="Article-container">
-      <div className="Article-content"
+      <div
+        className="Article-content"
         dangerouslySetInnerHTML={{
           __html: DOMPurify.sanitize(marked(data, options))
         }}
