@@ -67,8 +67,7 @@ const ReactLogo = () => {
         </circle>
 
         <circle r="10" fill="url('#myGradient')">
-          {' '}
-          {/* circle is revolving in reverse path  */}
+          {/* electron is revolving in reverse path of orbit */}
           <animateMotion
             dur="11s"
             repeatCount="indefinite"
