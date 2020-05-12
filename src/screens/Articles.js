@@ -1,11 +1,16 @@
 import React from 'react';
 
-import ArticlePage from '../components/ArticlePage';
+import ArticleCard from '../components/ArticleCard';
+import '../css/Article.css';
 
 const Article = () => {
   return (
-    <div style={{display: 'flex', flex: 1}}>
-      <ArticlePage url={'https://raw.githubusercontent.com/Maskedman99/Iris-Flowers/master/1.md'}/>
+    <div className = "Article-container">
+      <ArticleCard
+        heading={'Iris Flowers'}
+        url={'https://raw.githubusercontent.com/Maskedman99/Iris-Flowers/master/2.md'}
+        tags={['R', 'Data-Science']}
+      />
     </div>
   );
 };
