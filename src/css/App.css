@@ -67,10 +67,14 @@
 
 .Links:hover {
   cursor: pointer;
-  text-decoration: underline;
   color: aqua;
 }
 
+.activeLinks {
+  text-decoration: none;
+  font-size: large;
+  color: aqua;
+}
 /*            SLIDE ANIMATION ON ROUTER*/
 
 /*            PUSH*/

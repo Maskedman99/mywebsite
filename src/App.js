@@ -1,6 +1,6 @@
 import React from 'react';
-import {Route, Link, Switch, withRouter, Redirect} from 'react-router-dom';
 import {CSSTransition, TransitionGroup} from 'react-transition-group';
+import {Route, Link, Switch, withRouter, Redirect, useRouteMatch} from 'react-router-dom';
 
 import './css/App.css';
 
@@ -11,27 +11,32 @@ import Articles from './screens/Articles';
 import Protfolio from './screens/Protfolio';
 import NotFound404 from './screens/NotFound404';
 
-function App({location, history}) {
+const CustomLink = ({ label, to, activeOnlyWhenExact }) => {
+  let match = useRouteMatch({
+    path: to,
+    exact: activeOnlyWhenExact
+  });
+
+  return (
+    <div>
+      <Link to={to} className={match ? "activeLinks" : "Links"}>{label}</Link>
+    </div>
+  );
+}
+
+const App = ({location, history}) => {
   return (
     <div className="App">
       <header className="App-header">
         <div className="App-header-div">
-          <Link to="/" className="Title">
+          <Link to="/mywebsite" className="Title">
             ROHIT PRASAD
           </Link>
           <div className="App-header-links">
-            <Link to="/about" className="Links">
-              ABOUT
-            </Link>
-            <Link to="/protfolio" className="Links">
-              PROTFOLIO
-            </Link>
-            <Link to="/articles" className="Links">
-              ARTICLES
-            </Link>
-            <Link to="/projects" className="Links">
-              PROJECTS
-            </Link>
+            <CustomLink activeOnlyWhenExact={true} to="/about" label="ABOUT" />
+            <CustomLink activeOnlyWhenExact={true} to="/protfolio" label="PROTFOLIO" />
+            <CustomLink activeOnlyWhenExact={true} to="/articles" label="ARTICLES" />
+            <CustomLink activeOnlyWhenExact={true} to="/projects" label="PROJECTS" />
           </div>
         </div>
 
@@ -43,7 +48,7 @@ function App({location, history}) {
           >
             <section className="route-section">
               <Switch location={location}>
-                <Route path="/" exact component={Main} />
+                <Route path="/mywebsite" exact component={Main} />
                 <Route path="/about" exact component={About} />
                 <Route path="/articles" exact component={Articles} />
                 <Route path="/projects" exact component={Projects} />
@@ -57,6 +62,6 @@ function App({location, history}) {
       </header>
     </div>
   );
-}
+};
 
 export default withRouter(App);
