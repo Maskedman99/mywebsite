@@ -5,10 +5,10 @@ import '../css/Article.css';
 
 const Article = () => {
   return (
-    <div className = "Article-container">
+    <div className="Article-container">
       <ArticleCard
         heading={'Iris Flowers'}
-        url={'https://raw.githubusercontent.com/Maskedman99/Iris-Flowers/master/2.md'}
+        sourceUrl={'https://raw.githubusercontent.com/Maskedman99/Iris-Flowers/master/2.md'}
         tags={['R', 'Data-Science']}
       />
     </div>

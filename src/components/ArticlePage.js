@@ -18,13 +18,13 @@ const ArticlePage = ({url}) => {
 
   useEffect(() => {
     axios
-      .get(url)
+      .get('https://raw.githubusercontent.com/Maskedman99/Iris-Flowers/master/2.md')
       .then(response => setData(response.data))
       .catch(e => alert(e));
   }, [url]);
 
   return (
-    <div className="Article-container">
+    <div className="ArticlePage-container">
       <div
         className="Article-content"
         dangerouslySetInnerHTML={{
