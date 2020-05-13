@@ -58,7 +58,7 @@ const App = ({location, history}) => {
                 <Route path="/projects" exact component={Projects} />
                 <Route path="/protfolio" exact component={Protfolio} />
                 <Route path="/404" component={NotFound404} />
-                <Redirect from='/mywebsite/' to="/" />
+                <Redirect from="/mywebsite/" to="/" />
                 <Redirect to="/404" />
               </Switch>
             </section>

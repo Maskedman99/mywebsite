@@ -1,8 +1,8 @@
 import React, {useEffect, useState} from 'react';
 import {useParams} from 'react-router-dom';
+import axios from 'axios';
 import marked from 'marked';
 import DOMPurify from 'dompurify';
-import axios from 'axios';
 import hljs from 'highlight.js/lib/core';
 import r from 'highlight.js/lib/languages/r';
 

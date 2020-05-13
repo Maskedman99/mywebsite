@@ -8,7 +8,7 @@ const Article = () => {
   return (
     <div className="Article-container">
       {articleData.map((item, key) => (
-        <ArticleCard heading={item.heading} tags={item.tags} id={key}/>
+        <ArticleCard heading={item.heading} tags={item.tags} id={key} />
       ))}
     </div>
   );
