@@ -1,6 +1,8 @@
 .ArticleCard-cont {
   flex: 1;
   color: white;
+  text-decoration: none;
+  margin: 1vh;
 }
 
 .ArticleCard-container {
