@@ -8,10 +8,11 @@ import Main from './screens/Main';
 import About from './screens/About';
 import Projects from './screens/Projects';
 import Articles from './screens/Articles';
+import ArticlePage from './components/ArticlePage';
 import Protfolio from './screens/Protfolio';
 import NotFound404 from './screens/NotFound404';
 
-const CustomLink = ({ label, to, activeOnlyWhenExact }) => {
+const CustomLink = ({label, to, activeOnlyWhenExact}) => {
   let match = useRouteMatch({
     path: to,
     exact: activeOnlyWhenExact
@@ -19,17 +20,19 @@ const CustomLink = ({ label, to, activeOnlyWhenExact }) => {
 
   return (
     <div>
-      <Link to={to} className={match ? "activeLinks" : "Links"}>{label}</Link>
+      <Link to={to} className={match ? 'activeLinks' : 'Links'}>
+        {label}
+      </Link>
     </div>
   );
-}
+};
 
 const App = ({location, history}) => {
   return (
     <div className="App">
       <header className="App-header">
         <div className="App-header-div">
-          <Link to="/mywebsite" className="Title">
+          <Link to="/" className="Title">
             ROHIT PRASAD
           </Link>
           <div className="App-header-links">
@@ -48,12 +51,14 @@ const App = ({location, history}) => {
           >
             <section className="route-section">
               <Switch location={location}>
-                <Route path="/mywebsite" exact component={Main} />
+                <Route path="/" exact component={Main} />
                 <Route path="/about" exact component={About} />
                 <Route path="/articles" exact component={Articles} />
+                <Route exact path="/articles/:url" component={ArticlePage} />
                 <Route path="/projects" exact component={Projects} />
                 <Route path="/protfolio" exact component={Protfolio} />
                 <Route path="/404" component={NotFound404} />
+                <Redirect from='/mywebsite/' to="/" />
                 <Redirect to="/404" />
               </Switch>
             </section>

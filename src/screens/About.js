@@ -29,7 +29,7 @@ const About = () => {
         <ReactLogo />
       </div>
       <div className="About-footer">
-        <p>Find me at: </p>
+        Find me at: 
         <a
           className="About-links"
           target="_blank"
