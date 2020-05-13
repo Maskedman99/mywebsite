@@ -75,6 +75,11 @@
   font-size: large;
   color: aqua;
 }
+
+a:active,
+a:focus {
+  outline: 0;
+}
 /*            SLIDE ANIMATION ON ROUTER*/
 
 /*            PUSH*/
