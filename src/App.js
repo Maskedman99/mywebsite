@@ -54,7 +54,7 @@ const App = ({location, history}) => {
                 <Route path="/" exact component={Main} />
                 <Route path="/about" exact component={About} />
                 <Route path="/articles" exact component={Articles} />
-                <Route exact path="/articles/:url" component={ArticlePage} />
+                <Route exact path="/articles/:id" component={ArticlePage} />
                 <Route path="/projects" exact component={Projects} />
                 <Route path="/protfolio" exact component={Protfolio} />
                 <Route path="/404" component={NotFound404} />

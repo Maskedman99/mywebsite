@@ -1,27 +1,30 @@
 import React, {useEffect, useState} from 'react';
+import {useParams} from 'react-router-dom';
 import marked from 'marked';
 import DOMPurify from 'dompurify';
 import axios from 'axios';
 import hljs from 'highlight.js/lib/core';
 import r from 'highlight.js/lib/languages/r';
 
+import articleData from '../assets/ArticleData.json';
 import 'highlight.js/styles/dracula.css';
 import '../css/ArticlePage.css';
 
 hljs.registerLanguage('r', r);
 
-const ArticlePage = ({url}) => {
+const ArticlePage = () => {
   const [data, setData] = useState('');
+  let {id} = useParams();
   let options = {
     highlight: code => hljs.highlight('r', code).value
   };
 
   useEffect(() => {
     axios
-      .get('https://raw.githubusercontent.com/Maskedman99/Iris-Flowers/master/2.md')
+      .get(articleData[id].url)
       .then(response => setData(response.data))
       .catch(e => alert(e));
-  }, [url]);
+  }, [id]);
 
   return (
     <div className="ArticlePage-container">

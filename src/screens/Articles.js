@@ -1,16 +1,15 @@
 import React from 'react';
 
 import ArticleCard from '../components/ArticleCard';
+import articleData from '../assets/ArticleData.json';
 import '../css/Article.css';
 
 const Article = () => {
   return (
     <div className="Article-container">
-      <ArticleCard
-        heading={'Iris Flowers'}
-        sourceUrl={'https://raw.githubusercontent.com/Maskedman99/Iris-Flowers/master/2.md'}
-        tags={['R', 'Data-Science']}
-      />
+      {articleData.map((item, key) => (
+        <ArticleCard heading={item.heading} tags={item.tags} id={key}/>
+      ))}
     </div>
   );
 };
