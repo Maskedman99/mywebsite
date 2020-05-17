@@ -6,6 +6,13 @@
   padding: 1vw;
   border: 1px solid white;
   border-radius: 3px;
+  min-height: 82vh;
+}
+
+.Article-image {
+  position: absolute;
+  align-self: center;
+  left: 48vw;
 }
 
 code:not([class]) {
