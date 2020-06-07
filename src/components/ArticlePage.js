@@ -35,7 +35,7 @@ const ArticlePage = () => {
   return (
     <div className="ArticlePage-container">
       {loading ? (
-          <img className="Article-image" src={spinner} alt="" />
+          <img className="ArticlePage-LoadingImage" src={spinner} alt="" />
       ) : (
         <div
           className="Article-content"
