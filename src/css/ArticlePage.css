@@ -9,7 +9,7 @@
   min-height: 82vh;
 }
 
-.Article-image {
+.ArticlePage-LoadingImage {
   position: absolute;
   align-self: center;
   left: 48vw;
@@ -34,4 +34,10 @@ img:not([class]) {
 h1:not([class]) {
   text-align: center;
   font-family: 'Cabin Sketch', cursive;
+}
+
+p:not([class]) {
+  min-width: 96vw;
+  display: flex;
+  justify-content: center;
 }

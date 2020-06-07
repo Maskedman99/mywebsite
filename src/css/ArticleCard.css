@@ -13,7 +13,7 @@
   background-color: rgb(20, 20, 70);
   cursor: pointer;
   border: 1px solid white;
-  border-radius: 3px;
+  border-radius: 10px;
 }
 
 .ArticleCard-tag {
