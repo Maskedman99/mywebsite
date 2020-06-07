@@ -10,8 +10,8 @@ const ProjectGrid = props => {
       </div>
       <div className="ProjectGrid-details">
         <h1>{props.title}</h1>
-        <p>{props.desc}</p> <br />
-        <p>Made Using: {props.mu}</p> <br />
+        <p className="ProjectGrid-para">{props.desc}</p> <br />
+        <p className="ProjectGrid-para">Made Using: {props.mu}</p> <br />
         <a href={props.sc}>Source Code</a> <br />
         {props.link === undefined ? <div></div> : <a href={props.link}>Live Link</a>}
       </div>
