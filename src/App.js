@@ -1,6 +1,6 @@
 import React from 'react';
 import {CSSTransition, TransitionGroup} from 'react-transition-group';
-import {Route, Link, Switch, withRouter, Redirect, useRouteMatch} from 'react-router-dom';
+import {Route, Switch, withRouter, Redirect, NavLink} from 'react-router-dom';
 
 import './css/App.css';
 
@@ -12,34 +12,27 @@ import ArticlePage from './components/ArticlePage';
 import Protfolio from './screens/Protfolio';
 import NotFound404 from './screens/NotFound404';
 
-const CustomLink = ({label, to, activeOnlyWhenExact}) => {
-  let match = useRouteMatch({
-    path: to,
-    exact: activeOnlyWhenExact
-  });
-
-  return (
-    <div>
-      <Link to={to} className={match ? 'activeLinks' : 'Links'}>
-        {label}
-      </Link>
-    </div>
-  );
-};
-
-const App = ({location, history}) => {
+const App = ({location}) => {
   return (
     <div className="App">
       <header className="App-header">
         <div className="App-header-div">
-          <Link to="/" className="Title">
+          <NavLink to="/" exact className="Title" activeStyle={{pointerEvents: 'none'}}>
             ROHIT PRASAD
-          </Link>
+          </NavLink>
           <div className="App-header-links">
-            <CustomLink activeOnlyWhenExact={true} to="/about" label="ABOUT" />
-            <CustomLink activeOnlyWhenExact={true} to="/protfolio" label="PROTFOLIO" />
-            <CustomLink activeOnlyWhenExact={true} to="/articles" label="ARTICLES" />
-            <CustomLink activeOnlyWhenExact={true} to="/projects" label="PROJECTS" />
+            <NavLink to="/about" className="Links" activeClassName="activeLink">
+              ABOUT
+            </NavLink>
+            <NavLink to="/protfolio" className="Links" activeClassName="activeLink">
+              PROTFOLIO
+            </NavLink>
+            <NavLink to="/articles" className="Links" activeClassName="activeLink">
+              ARTICLES
+            </NavLink>
+            <NavLink to="/projects" className="Links" activeClassName="activeLink">
+              PROJECTS
+            </NavLink>
           </div>
         </div>
 
@@ -54,11 +47,10 @@ const App = ({location, history}) => {
                 <Route path="/" exact component={Main} />
                 <Route path="/about" exact component={About} />
                 <Route path="/articles" exact component={Articles} />
-                <Route exact path="/articles/:id" component={ArticlePage} />
+                <Route path="/articles/:id" exact component={ArticlePage} />
                 <Route path="/projects" exact component={Projects} />
                 <Route path="/protfolio" exact component={Protfolio} />
                 <Route path="/404" component={NotFound404} />
-                <Redirect from="/mywebsite/" to="/" />
                 <Redirect to="/404" />
               </Switch>
             </section>

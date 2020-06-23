@@ -70,10 +70,11 @@
   color: aqua;
 }
 
-.activeLinks {
+.activeLink {
   text-decoration: none;
   font-size: large;
   color: aqua;
+  pointer-events: none;
 }
 
 a:active,
