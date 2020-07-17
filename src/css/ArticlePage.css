@@ -1,5 +1,5 @@
 .ArticlePage-container {
-  font-family: 'Exo 2', sans-serif;
+  font-family: 'Roboto', sans-serif;
   display: flex;
   flex: 1;
   margin: 1vw;
@@ -33,7 +33,7 @@ img:not([class]) {
 
 h1:not([class]) {
   text-align: center;
-  font-family: 'Cabin Sketch', cursive;
+  font-family: 'Roboto', sans-serif;
 }
 
 p:not([class]) {
