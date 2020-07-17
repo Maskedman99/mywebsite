@@ -1,5 +1,4 @@
 import React from 'react';
-import {CSSTransition, TransitionGroup} from 'react-transition-group';
 import {Route, Switch, withRouter, Redirect, NavLink} from 'react-router-dom';
 
 import './css/App.css';
@@ -36,26 +35,16 @@ const App = ({location}) => {
           </div>
         </div>
 
-        <TransitionGroup className="transition-group">
-          <CSSTransition
-            key={location.key}
-            timeout={{enter: 2000, exit: 2000}}
-            classNames={'slide'} // history.action === 'PUSH' ? 'slide': 'slide-back' }
-          >
-            <section className="route-section">
-              <Switch location={location}>
-                <Route path="/" exact component={Main} />
-                <Route path="/about" exact component={About} />
-                <Route path="/articles" exact component={Articles} />
-                <Route path="/articles/:id" exact component={ArticlePage} />
-                <Route path="/projects" exact component={Projects} />
-                <Route path="/protfolio" exact component={Protfolio} />
-                <Route path="/404" component={NotFound404} />
-                <Redirect to="/404" />
-              </Switch>
-            </section>
-          </CSSTransition>
-        </TransitionGroup>
+        <Switch location={location}>
+          <Route path="/" exact component={Main} />
+          <Route path="/about" exact component={About} />
+          <Route path="/articles" exact component={Articles} />
+          <Route path="/articles/:id" exact component={ArticlePage} />
+          <Route path="/projects" exact component={Projects} />
+          <Route path="/protfolio" exact component={Protfolio} />
+          <Route path="/404" component={NotFound404} />
+          <Redirect to="/404" />
+        </Switch>
       </header>
     </div>
   );
