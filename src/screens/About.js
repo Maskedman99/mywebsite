@@ -12,7 +12,7 @@ import '../css/About.css';
 const About = () => {
   return (
     <div className="About-main">
-      <img src={Pic} alt="" width="125vw" height="125vh" />
+      <img src={Pic} alt="profile pic" width="125vw" height="125vh" />
       <h1 className="About-title">About me!</h1>
       <div className="About-text">
         <p>I am Awsome!! Just like you... </p>
@@ -22,46 +22,40 @@ const About = () => {
         <p>cdnskaufhomejruamcboxirwmct</p>
       </div>
       <div className="About-footer">
-        Find me at: 
         <a
           className="About-links"
           target="_blank"
           rel="noopener noreferrer"
           href="https://github.com/Maskedman99">
-          <img className="About-image" src={github} alt="" />
-          Github
+          <img className="About-image" src={github} alt="github" />
         </a>
         <a
           className="About-links"
           target="_blank"
           rel="noopener noreferrer"
           href="https://www.linkedin.com/in/rohit-prasad-819a8015a/">
-          <img className="About-image" src={linkedin} alt="" />
-          LinkedIn
+          <img className="About-image" src={linkedin} alt="linkedin" />
         </a>
         <a
           className="About-links"
           target="_blank"
           rel="noopener noreferrer"
           href="https://codepen.io/Maskedman99/pens/">
-          <img className="About-image" src={codepen} alt="" />
-          CodePen
+          <img className="About-image" src={codepen} alt="codpen" />
         </a>
         <a
           className="About-links"
           target="_blank"
           rel="noopener noreferrer"
           href="mailto:rohitmpaul@gmail.com">
-          <img className="About-image" src={envelope} alt="" />
-          E-mail
+          <img className="About-image" src={envelope} alt="mail" />
         </a>
         <a
           className="About-links"
           target="_blank"
           rel="noopener noreferrer"
           href="https://sourcerer.io/maskedman99">
-          <img className="About-image" src={sourcerer} alt="" />
-          Sourcerer
+          <img className="About-image" src={sourcerer} alt="sourcerer" />
         </a>
       </div>
     </div>
