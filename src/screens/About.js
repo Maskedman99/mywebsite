@@ -1,8 +1,5 @@
 import React from 'react';
 
-import Pyramid from '../components/Pyramid';
-import ReactLogo from '../components/ReactLogo';
-
 import Pic from '../assets/Rcolor.png';
 import github from '../assets/github.svg';
 import linkedin from '../assets/linkedin.svg';
@@ -23,10 +20,6 @@ const About = () => {
         <p>blah blah blah blah blah blah blah blah bla cds</p>
         <p>cdskmcke</p>
         <p>cdnskaufhomejruamcboxirwmct</p>
-      </div>
-      <div className="About-animations">
-        <Pyramid />
-        <ReactLogo />
       </div>
       <div className="About-footer">
         Find me at: 

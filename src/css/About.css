@@ -42,11 +42,3 @@ p {
   width: 4vw;
   height: 4vh;
 }
-
-.About-animations {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 100vw;
-  height: 42vw;
-}
