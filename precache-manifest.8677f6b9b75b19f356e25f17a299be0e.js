@@ -1,39 +1,35 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "df022349c9327a44a418898ddb262903",
+    "revision": "ac24df56de9dba2429b3125c0f3dd698",
     "url": "/index.html"
   },
   {
-    "revision": "fbd6ff508e01bcbfda9a",
+    "revision": "c45ff15189109a415a05",
     "url": "/static/css/2.5592ad1b.chunk.css"
   },
   {
-    "revision": "fe84ad2fbb29c6eed3a7",
-    "url": "/static/css/main.377d9d96.chunk.css"
+    "revision": "96e63ee3d319f664963f",
+    "url": "/static/css/main.acb59da2.chunk.css"
   },
   {
-    "revision": "fbd6ff508e01bcbfda9a",
-    "url": "/static/js/2.6959c629.chunk.js"
+    "revision": "c45ff15189109a415a05",
+    "url": "/static/js/2.f0beaa77.chunk.js"
   },
   {
     "revision": "92bcffc488d6f3fbd12a7720ee4a3b28",
-    "url": "/static/js/2.6959c629.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.f0beaa77.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "fe84ad2fbb29c6eed3a7",
-    "url": "/static/js/main.48fdfdd3.chunk.js"
+    "revision": "96e63ee3d319f664963f",
+    "url": "/static/js/main.59127ca6.chunk.js"
   },
   {
     "revision": "9653abae4b6fbcede268",
     "url": "/static/js/runtime-main.63cb50d0.js"
   },
   {
-    "revision": "930ffc7d7b28bf635d4fcf74521fcdfd",
-    "url": "/static/media/Rcolor.930ffc7d.png"
-  },
-  {
-    "revision": "621273d2e9a1ebea83a444a1b1898328",
-    "url": "/static/media/codepen.621273d2.svg"
+    "revision": "1c671244b2e7224d7bfbe4f0f45718a9",
+    "url": "/static/media/codepen.1c671244.svg"
   },
   {
     "revision": "afc3222990a87d84e1d035bccf697e43",
@@ -44,16 +40,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/github.f051c626.svg"
   },
   {
-    "revision": "a80f9f924e4b2e856bdd44921c22ba88",
-    "url": "/static/media/libgen.a80f9f92.svg"
+    "revision": "b1e20655124eb8f6292d56846a73d91b",
+    "url": "/static/media/libgen.b1e20655.svg"
   },
   {
     "revision": "791bc66270d84e7aed312cbda8e9a53e",
     "url": "/static/media/linkedin.791bc662.svg"
   },
   {
-    "revision": "196d14bd40f02a11baa3d5f298db01fb",
-    "url": "/static/media/mec.196d14bd.svg"
+    "revision": "5e302b87f2830f0a4039b67aa7977e6c",
+    "url": "/static/media/mec.5e302b87.svg"
+  },
+  {
+    "revision": "4b3e53128762d6df8dbbda1237512df8",
+    "url": "/static/media/profilePic.4b3e5312.jpg"
   },
   {
     "revision": "565e1a1e3134905226ef357f1b0cf55d",
