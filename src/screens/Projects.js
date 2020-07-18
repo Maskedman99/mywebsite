@@ -4,6 +4,7 @@ import ProjectGrid from '../components/ProjectGrid';
 
 import Project1 from '../assets/libgen.svg';
 import Project2 from '../assets/mec.svg';
+import Project3 from '../assets/covidstats.png'
 
 import '../css/Projects.css';
 
@@ -25,6 +26,13 @@ const Projects = () => {
           mu="React-native"
           sc="https://github.com/Maskedman99/MEC"
           link="https://play.google.com/store/apps/details?id=com.maskedmanmec"
+        />
+        <ProjectGrid
+          image={Project3}
+          title="covidstats"
+          desc="App to find statistics on covid cases"
+          mu="React-native"
+          sc="https://github.com/Maskedman99/covidstats"
         />
       </div>
     </div>

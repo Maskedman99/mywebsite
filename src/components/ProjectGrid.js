@@ -6,7 +6,7 @@ const ProjectGrid = props => {
   return (
     <div className="ProjectGrid-main">
       <div className="ProjectGrid-Image">
-        <img src={props.image} alt="" width="50%" height="70%" />
+        <img src={props.image} alt="" width="30%" height="45%" />
       </div>
       <div className="ProjectGrid-details">
         <h1>{props.title}</h1>
