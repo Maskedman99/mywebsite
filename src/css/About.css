@@ -34,3 +34,7 @@ p {
   width: 4vw;
   height: 4vh;
 }
+
+.About-ProfilePic {
+  border-radius: 8px;
+}

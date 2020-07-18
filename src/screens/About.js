@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Pic from '../assets/Rcolor.png';
+import Pic from '../assets/profilePic.jpg';
 import github from '../assets/github.svg';
 import linkedin from '../assets/linkedin.svg';
 import envelope from '../assets/envelope.svg';
@@ -12,7 +12,7 @@ import '../css/About.css';
 const About = () => {
   return (
     <div className="About-main">
-      <img src={Pic} alt="profile pic" width="125vw" height="125vh" />
+      <img src={Pic} alt="profile pic" width="125vw" height="125vh" className="About-ProfilePic"/>
       <h1 className="About-title">About me!</h1>
       <div className="About-text">
         <p>I am Awsome!! Just like you... </p>
