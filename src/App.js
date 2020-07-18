@@ -23,14 +23,14 @@ const App = ({location}) => {
             <NavLink to="/about" className="Links" activeClassName="activeLink">
               ABOUT
             </NavLink>
+            <NavLink to="/projects" className="Links" activeClassName="activeLink">
+              PROJECTS
+            </NavLink>
             <NavLink to="/protfolio" className="Links" activeClassName="activeLink">
-              PROTFOLIO
+              RESUME
             </NavLink>
             <NavLink to="/articles" className="Links" activeClassName="activeLink">
               ARTICLES
-            </NavLink>
-            <NavLink to="/projects" className="Links" activeClassName="activeLink">
-              PROJECTS
             </NavLink>
           </div>
         </div>
