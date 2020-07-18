@@ -7,8 +7,7 @@
 }
 
 .App-main-text {
-  font-family: 'Roboto', sans-serif;
-  font-weight: lighter;
+  font-weight: 300;
   font-size: 6vh;
   display: flex;
   align-items: center;

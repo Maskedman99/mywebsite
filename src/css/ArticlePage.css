@@ -33,7 +33,6 @@ img:not([class]) {
 
 h1:not([class]) {
   text-align: center;
-  font-family: 'Roboto', sans-serif;
 }
 
 p:not([class]) {

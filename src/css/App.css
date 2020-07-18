@@ -2,6 +2,7 @@
   display: flex;
   color: white;
   background-color: #282c34;
+  font-family: 'Lato', sans-serif;
   justify-content: center;
   overflow-x: hidden;
   scrollbar-width: thin; /*ONLY ON FIREFOX*/
@@ -40,7 +41,6 @@
 }
 
 .Title {
-  font-family: 'Roboto', sans-serif;
   font-weight: bold;
   font-size: x-large;
   color: white;
@@ -55,7 +55,6 @@
   flex-direction: row;
   justify-content: space-evenly;
   flex-grow: 1;
-  font-family: 'Roboto', sans-serif;
   font-size: medium;
 }
 

@@ -6,7 +6,6 @@
 }
 
 .ArticleCard-container {
-  font-family: 'Roboto', sans-serif;
   display: flexbox;
   flex: 1;
   padding: 1vw;
