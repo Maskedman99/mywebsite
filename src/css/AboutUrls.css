@@ -1,0 +1,23 @@
+.About-footer-horizontal {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  bottom: 5vh;
+  align-items: baseline;
+}
+
+.About-footer-vertical {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-left: 1vw;
+  align-items: baseline;
+}
+
+.About-image {
+  width: 4vw;
+  height: 4vh;
+}
