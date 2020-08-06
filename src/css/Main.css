@@ -6,11 +6,13 @@
   min-height: 70vh;
 }
 
-.App-main-text {
-  font-weight: 300;
-  font-size: 6vh;
-  display: flex;
-  align-items: center;
-  text-align: end;
+.App-main-text-container {
+  margin: 4vw;
+  margin-top: 6vw;
+}
+
+.App-main-title {
+  font-weight: bolder;
+  font-size: 60px;
   cursor: default;
 }
