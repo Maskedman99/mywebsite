@@ -2,8 +2,8 @@ import React from 'react';
 
 import ProjectGrid from '../components/ProjectGrid';
 
-import Project1 from '../assets/libgen.svg';
-import Project2 from '../assets/mec.svg';
+import Project1 from '../assets/libgen.png';
+import Project2 from '../assets/mec.png';
 import Project3 from '../assets/covidstats.png'
 
 import '../css/Projects.css';
