@@ -2,12 +2,25 @@ import React, {useContext} from 'react';
 
 import {ThemeContext} from '../context/Themes';
 
-import '../css/ThemeToggle.css';
+import moon from '../assets/moon.json';
+import sun from '../assets/sun.json';
 
 const ThemeToggle = () => {
-  const {changeTheme} = useContext(ThemeContext);
+  const {theme, changeTheme} = useContext(ThemeContext);
 
-  return <button onClick={() => changeTheme()}>Toggle Theme</button>;
+  return (
+    <div onClick={() => changeTheme()}>
+      {theme.isDark ? (
+        <svg viewBox={sun.viewBox} style={{width: '4vw', height: '4vh', fill: 'orange'}}>
+          <path d={sun.path} />
+        </svg>
+      ) : (
+        <svg viewBox={moon.viewBox} style={{width: '4vw', height: '4vh', fill: 'grey'}}>
+          <path d={moon.path} />
+        </svg>
+      )}
+    </div>
+  );
 };
 
 export default ThemeToggle;
