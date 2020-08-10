@@ -23,42 +23,44 @@ const App = ({location}) => {
     Theme.isDark ? setTheme(themes.light) : setTheme(themes.dark);
   };
 
+  const link = {
+    color: Theme.foreground
+  };
+
   return (
     <ThemeContext.Provider value={{theme: Theme, changeTheme: changeTheme}}>
       <div className="App" style={{backgroundColor: Theme.background, color: Theme.foreground}}>
-        <header className="App-header">
-          <div className="App-header-div">
-            <NavLink to="/" exact className="Title" activeStyle={{pointerEvents: 'none'}}>
-              ROHIT PRASAD
+        <div className="App-header-div">
+          <NavLink to="/" exact className="Title" activeStyle={{pointerEvents: 'none'}} style={link}>
+            ROHIT PRASAD
+          </NavLink>
+          <div className="App-header-links">
+            <NavLink to="/about" className="Links" activeClassName="activeLink" style={link}>
+              ABOUT
             </NavLink>
-            <div className="App-header-links">
-              <NavLink to="/about" className="Links" activeClassName="activeLink">
-                ABOUT
-              </NavLink>
-              <NavLink to="/projects" className="Links" activeClassName="activeLink">
-                PROJECTS
-              </NavLink>
-              <NavLink to="/protfolio" className="Links" activeClassName="activeLink">
-                RESUME
-              </NavLink>
-              <NavLink to="/articles" className="Links" activeClassName="activeLink">
-                ARTICLES
-              </NavLink>
-              <ThemeToggle />
-            </div>
+            <NavLink to="/projects" className="Links" activeClassName="activeLink" style={link}>
+              PROJECTS
+            </NavLink>
+            <NavLink to="/protfolio" className="Links" activeClassName="activeLink" style={link}>
+              RESUME
+            </NavLink>
+            <NavLink to="/articles" className="Links" activeClassName="activeLink" style={link}>
+              ARTICLES
+            </NavLink>
+            <ThemeToggle />
           </div>
+        </div>
 
-          <Switch location={location}>
-            <Route path="/" exact component={Main} />
-            <Route path="/about" exact component={About} />
-            <Route path="/articles" exact component={Articles} />
-            <Route path="/articles/:id" exact component={ArticlePage} />
-            <Route path="/projects" exact component={Projects} />
-            <Route path="/protfolio" exact component={Protfolio} />
-            <Route path="/404" component={NotFound404} />
-            <Redirect to="/404" />
-          </Switch>
-        </header>
+        <Switch location={location}>
+          <Route path="/" exact component={Main} />
+          <Route path="/about" exact component={About} />
+          <Route path="/articles" exact component={Articles} />
+          <Route path="/articles/:id" exact component={ArticlePage} />
+          <Route path="/projects" exact component={Projects} />
+          <Route path="/protfolio" exact component={Protfolio} />
+          <Route path="/404" component={NotFound404} />
+          <Redirect to="/404" />
+        </Switch>
       </div>
     </ThemeContext.Provider>
   );

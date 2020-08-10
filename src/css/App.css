@@ -1,10 +1,10 @@
 .App {
-  display: flex;
   font-family: 'Lato', sans-serif;
-  justify-content: center;
   overflow-x: hidden;
   scrollbar-width: thin; /*ONLY ON FIREFOX*/
   scrollbar-color: #75b3fa #575858;
+  min-height: 100vh;
+  min-width: 100vw;
 }
 
 /*          BELOW CUSTOMIZING SCROLL-BAR WORKS IN CHROMIUM BASED BROWSERS*/
@@ -23,11 +23,6 @@
 }
 
 /*          FLEX CSS LOGIC*/
-
-.App-header {
-  min-height: 100vh;
-  min-width: 100vw;
-}
 
 .App-header-div {
   display: flex;
@@ -61,13 +56,13 @@
 
 .Links:hover {
   cursor: pointer;
-  color: aquamarine;
+  color: aqua !important;
 }
 
 .activeLink {
   text-decoration: none;
   font-size: large;
-  color: aqua;
+  color: aqua !important;
   pointer-events: none;
 }
 
