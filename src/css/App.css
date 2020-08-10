@@ -37,6 +37,8 @@
   font-size: x-large;
   text-decoration: none;
   flex-grow: 1;
+  text-align: start;
+  margin-left: 12vw;
   cursor: pointer;
 }
 
