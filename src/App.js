@@ -1,7 +1,9 @@
-import React from 'react';
+import React, {useContext, useState} from 'react';
 import {Route, Switch, withRouter, Redirect, NavLink} from 'react-router-dom';
 
-import './css/App.css';
+import {themes, ThemeContext} from './context/Themes';
+
+import ThemeToggle from './components/ThemeToggle';
 
 import Main from './screens/Main';
 import About from './screens/About';
@@ -11,42 +13,54 @@ import ArticlePage from './components/ArticlePage';
 import Protfolio from './screens/Protfolio';
 import NotFound404 from './screens/NotFound404';
 
-const App = ({location}) => {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <div className="App-header-div">
-          <NavLink to="/" exact className="Title" activeStyle={{pointerEvents: 'none'}}>
-            ROHIT PRASAD
-          </NavLink>
-          <div className="App-header-links">
-            <NavLink to="/about" className="Links" activeClassName="activeLink">
-              ABOUT
-            </NavLink>
-            <NavLink to="/projects" className="Links" activeClassName="activeLink">
-              PROJECTS
-            </NavLink>
-            <NavLink to="/protfolio" className="Links" activeClassName="activeLink">
-              RESUME
-            </NavLink>
-            <NavLink to="/articles" className="Links" activeClassName="activeLink">
-              ARTICLES
-            </NavLink>
-          </div>
-        </div>
+import './css/App.css';
 
-        <Switch location={location}>
-          <Route path="/" exact component={Main} />
-          <Route path="/about" exact component={About} />
-          <Route path="/articles" exact component={Articles} />
-          <Route path="/articles/:id" exact component={ArticlePage} />
-          <Route path="/projects" exact component={Projects} />
-          <Route path="/protfolio" exact component={Protfolio} />
-          <Route path="/404" component={NotFound404} />
-          <Redirect to="/404" />
-        </Switch>
-      </header>
-    </div>
+const App = ({location}) => {
+  const {theme} = useContext(ThemeContext);
+  const [Theme, setTheme] = useState(theme);
+
+  const changeTheme = async () => {
+    Theme.isDark ? setTheme(themes.light) : setTheme(themes.dark);
+  };
+
+  return (
+    <ThemeContext.Provider value={{theme: Theme, changeTheme: changeTheme}}>
+      <div className="App" style={{backgroundColor: Theme.background, color: Theme.foreground}}>
+        <header className="App-header">
+          <div className="App-header-div">
+            <NavLink to="/" exact className="Title" activeStyle={{pointerEvents: 'none'}}>
+              ROHIT PRASAD
+            </NavLink>
+            <div className="App-header-links">
+              <NavLink to="/about" className="Links" activeClassName="activeLink">
+                ABOUT
+              </NavLink>
+              <NavLink to="/projects" className="Links" activeClassName="activeLink">
+                PROJECTS
+              </NavLink>
+              <NavLink to="/protfolio" className="Links" activeClassName="activeLink">
+                RESUME
+              </NavLink>
+              <NavLink to="/articles" className="Links" activeClassName="activeLink">
+                ARTICLES
+              </NavLink>
+              <ThemeToggle />
+            </div>
+          </div>
+
+          <Switch location={location}>
+            <Route path="/" exact component={Main} />
+            <Route path="/about" exact component={About} />
+            <Route path="/articles" exact component={Articles} />
+            <Route path="/articles/:id" exact component={ArticlePage} />
+            <Route path="/projects" exact component={Projects} />
+            <Route path="/protfolio" exact component={Protfolio} />
+            <Route path="/404" component={NotFound404} />
+            <Redirect to="/404" />
+          </Switch>
+        </header>
+      </div>
+    </ThemeContext.Provider>
   );
 };
 

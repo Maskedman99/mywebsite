@@ -20,9 +20,8 @@
 .About-image {
   width: 4vw;
   height: 4vh;
-  fill: white;
 }
 
 .About-image:hover {
-  fill: aqua;
+  fill: aqua !important;
 }

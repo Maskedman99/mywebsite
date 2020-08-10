@@ -1,7 +1,5 @@
 .App {
   display: flex;
-  color: white;
-  background-color: #282c34;
   font-family: 'Lato', sans-serif;
   justify-content: center;
   overflow-x: hidden;
@@ -42,10 +40,8 @@
 .Title {
   font-weight: bold;
   font-size: x-large;
-  color: white;
   text-decoration: none;
   flex-grow: 1;
-  justify-content: center;
   cursor: pointer;
 }
 
@@ -58,14 +54,14 @@
 }
 
 .Links {
-  color: white;
+  font-weight: bold;
   text-decoration: none;
   transition: color ls ease-in;
 }
 
 .Links:hover {
   cursor: pointer;
-  color: aqua;
+  color: aquamarine;
 }
 
 .activeLink {

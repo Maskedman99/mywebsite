@@ -1,5 +1,4 @@
 .ProjectGrid-main {
-  background-color: #282c34;
   border-radius: 0.5vw;
   display: flex;
   justify-content: center;
@@ -39,7 +38,7 @@
   padding-left: 4px;
 }
 
-a {
+.ProjectGrid-link {
   color: yellow;
   font-weight: bold;
 }
