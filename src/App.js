@@ -11,7 +11,6 @@ import Projects from './screens/Projects';
 import Articles from './screens/Articles';
 import ArticlePage from './components/ArticlePage';
 import Protfolio from './screens/Protfolio';
-import NotFound404 from './screens/NotFound404';
 
 import './css/App.css';
 
@@ -58,8 +57,7 @@ const App = ({location}) => {
           <Route path="/articles/:id" exact component={ArticlePage} />
           <Route path="/projects" exact component={Projects} />
           <Route path="/protfolio" exact component={Protfolio} />
-          <Route path="/404" component={NotFound404} />
-          <Redirect to="/404" />
+          <Redirect to="/" />
         </Switch>
       </div>
     </ThemeContext.Provider>
