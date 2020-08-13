@@ -2,8 +2,8 @@
   font-family: 'Lato', sans-serif;
   overflow-x: hidden;
   scrollbar-width: thin; /*ONLY ON FIREFOX*/
-  scrollbar-color: #75b3fa #575858;
-  min-height: 100vh;
+  scrollbar-color: aqua #575858;
+  height: 100vh;
   min-width: 100vw;
 }
 
@@ -18,7 +18,7 @@
 }
 
 .App::-webkit-scrollbar-thumb {
-  background-color: #75b3fa;
+  background-color: aqua;
   outline: 1px solid slategrey;
 }
 

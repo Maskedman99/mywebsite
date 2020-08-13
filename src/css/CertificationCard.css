@@ -1,0 +1,26 @@
+.CertificationCard-Container {
+  display: flex;
+  flex-direction: row;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  padding-top: 4vh;
+  padding-bottom: 4vh;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  margin-left: 12vw;
+  margin-right: 12vw;
+  background-color: rgb(20, 20, 70);
+  cursor: pointer;
+  border: 1px solid white;
+  border-radius: 10px;
+}
+
+.CertificationCard-Image {
+  margin-right: 4vw;
+}
+
+.CertificationCard-Title {
+  font-weight: bold;
+  font-size: x-large;
+  margin-bottom: 1vh;
+}

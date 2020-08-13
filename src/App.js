@@ -10,7 +10,7 @@ import About from './screens/About';
 import Projects from './screens/Projects';
 import Articles from './screens/Articles';
 import ArticlePage from './components/ArticlePage';
-import Protfolio from './screens/Protfolio';
+import Resume from './screens/Resume';
 
 import './css/App.css';
 
@@ -40,7 +40,7 @@ const App = ({location}) => {
             <NavLink to="/projects" className="Links" activeClassName="activeLink" style={link}>
               PROJECTS
             </NavLink>
-            <NavLink to="/protfolio" className="Links" activeClassName="activeLink" style={link}>
+            <NavLink to="/resume" className="Links" activeClassName="activeLink" style={link}>
               RESUME
             </NavLink>
             <NavLink to="/articles" className="Links" activeClassName="activeLink" style={link}>
@@ -56,7 +56,7 @@ const App = ({location}) => {
           <Route path="/articles" exact component={Articles} />
           <Route path="/articles/:id" exact component={ArticlePage} />
           <Route path="/projects" exact component={Projects} />
-          <Route path="/protfolio" exact component={Protfolio} />
+          <Route path="/resume" exact component={Resume} />
           <Redirect to="/" />
         </Switch>
       </div>
