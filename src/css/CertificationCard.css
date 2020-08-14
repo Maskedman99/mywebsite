@@ -6,10 +6,6 @@
   cursor: pointer;
 }
 
-.CertificationCard-Container :hover {
-  background-color: gray;
-}
-
 .CertificationCard-Image {
   margin-right: 4vw;
 }
