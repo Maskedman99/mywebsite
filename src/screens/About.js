@@ -2,13 +2,13 @@ import React from 'react';
 
 import AboutUrls from '../components/AboutUrls';
 
-import Pic from '../assets/profilePic.jpg';
+import Pic from '../assets/profilePic.jpeg';
 import '../css/About.css';
 
 const About = () => {
   return (
     <div className="About-main">
-      <img src={Pic} alt="" width="125vw" height="125vh" className="About-ProfilePic" />
+      <img src={Pic} alt="" width="125" height="125" className="About-ProfilePic" />
       <h1 className="About-title">About me!</h1>
       <div className="About-text">
         <p>I am Awsome!! Just like you... </p>

@@ -4,8 +4,8 @@ import Skills from '../components/Skills';
 import CertificationCard from '../components/CertificationCard';
 
 import avasarshala from '../assets/avasarshala.png';
-import coursera from '../assets/coursera.jpeg';
-import hackerrank from '../assets/hackerrank.jpeg';
+import coursera from '../assets/coursera.png';
+import hackerrank from '../assets/hackerrank.png';
 import stationx from '../assets/stationx.png';
 
 import '../css/Resume.css';
