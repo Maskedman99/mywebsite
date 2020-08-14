@@ -1,6 +1,7 @@
 .App {
   font-family: 'Lato', sans-serif;
   overflow-x: hidden;
+  overflow: overlay;
   scrollbar-width: thin; /*ONLY ON FIREFOX*/
   scrollbar-color: aqua #575858;
   height: 100vh;

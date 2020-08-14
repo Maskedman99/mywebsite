@@ -1,18 +1,13 @@
 .CertificationCard-Container {
   display: flex;
   flex-direction: row;
-  padding-left: 2vw;
-  padding-right: 2vw;
-  padding-top: 4vh;
-  padding-bottom: 4vh;
-  margin-top: 2vh;
-  margin-bottom: 2vh;
-  margin-left: 12vw;
-  margin-right: 12vw;
-  background-color: rgb(20, 20, 70);
+  padding: 4vh 2vw 4vh 2vw;
+  margin: 2vh 12vw 2vh 12vw;
   cursor: pointer;
-  border: 1px solid white;
-  border-radius: 10px;
+}
+
+.CertificationCard-Container :hover {
+  background-color: gray;
 }
 
 .CertificationCard-Image {
