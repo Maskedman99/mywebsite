@@ -4,19 +4,16 @@
   flex: 1;
   margin: 1vw;
 }
-
 .App-main-text-container {
   margin: 6vw;
   margin-top: 9vh;
   font-size: 18px;
   cursor: default;
 }
-
 .App-main-section {
   margin-top: 4vh;
   margin-bottom: 7vh;
 }
-
 .App-main-title {
   font-weight: bolder;
   font-size: 60px;

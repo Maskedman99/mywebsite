@@ -7,7 +7,6 @@
   bottom: 5vh;
   align-items: baseline;
 }
-
 .About-footer-vertical {
   display: flex;
   flex-direction: column;
@@ -16,12 +15,10 @@
   margin-left: 1vw;
   align-items: baseline;
 }
-
 .About-image {
   width: 4vw;
   height: 4vh;
 }
-
 .About-image:hover {
   fill: #0070ff !important;
 }

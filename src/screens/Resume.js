@@ -14,7 +14,9 @@ const Resume = () => {
   const [open, setOpen] = useState('Skills');
   return (
     <div className="Resume-Container">
-      <div className="Resume-Title" onClick={() => setOpen('Skills')}>
+      <div
+        className={open === 'Skills' ? 'Resume-ActiveTitle' : 'Resume-Title'}
+        onClick={() => setOpen('Skills')}>
         Skills
       </div>
       {open === 'Skills' && (
@@ -32,7 +34,9 @@ const Resume = () => {
           ]}
         />
       )}
-      <div className="Resume-Title" onClick={() => setOpen('Experience')}>
+      <div
+        className={open === 'Experience' ? 'Resume-ActiveTitle' : 'Resume-Title'}
+        onClick={() => setOpen('Experience')}>
         Experience
       </div>
       {open === 'Experience' && (
@@ -43,7 +47,9 @@ const Resume = () => {
           link={'https://www.avasarshala.com/'}
         />
       )}
-      <div className="Resume-Title" onClick={() => setOpen('Certifications')}>
+      <div
+        className={open === 'Certifications' ? 'Resume-ActiveTitle' : 'Resume-Title'}
+        onClick={() => setOpen('Certifications')}>
         Certifications
       </div>
       {open === 'Certifications' && (

@@ -4,21 +4,17 @@
   flex-direction: column;
   padding-top: 5vh;
 }
-
 .About-title {
   font-weight: 500;
   font-size: 7vh;
 }
-
 .About-text {
   font-size: large;
   text-align: center;
 }
-
 p {
   margin: 0.5vh;
 }
-
 .About-ProfilePic {
   border-radius: 8px;
 }

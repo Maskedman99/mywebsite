@@ -6,11 +6,9 @@
   cursor: pointer;
   text-decoration: none;
 }
-
 .CertificationCard-Image {
   margin-right: 4vw;
 }
-
 .CertificationCard-Title {
   font-weight: bold;
   font-size: x-large;
