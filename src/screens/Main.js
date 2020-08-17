@@ -11,10 +11,10 @@ const Main = () => {
       <div className="App-main-text-container">
         <div>Hi, I'm</div>
         <div className="App-main-section">
-          <div className="App-main-title" style={{color: 'aqua'}}>
+          <div className="App-main-title" style={{color: '#0070ff'}}>
             Rohit Prasad.
           </div>
-          <div className="App-main-title" style={{color: 'aquamarine'}}>
+          <div className="App-main-title" style={{color: '#0080ff'}}>
             I build things for the web and mobile.
           </div>
         </div>

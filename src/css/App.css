@@ -3,7 +3,7 @@
   overflow-x: hidden;
   overflow-y: scroll;
   scrollbar-width: thin; /*ONLY ON FIREFOX*/
-  scrollbar-color: aqua transparent;
+  scrollbar-color: #0080ff transparent;
   height: 100vh;
   min-width: 100vw;
 }
@@ -19,7 +19,7 @@
 }
 
 .App::-webkit-scrollbar-thumb {
-  background-color: aqua;
+  background-color: #0080ff;
 }
 
 /*          FLEX CSS LOGIC*/
@@ -58,13 +58,13 @@
 
 .Links:hover {
   cursor: pointer;
-  color: aqua !important;
+  color: #0080ff !important;
 }
 
 .activeLink {
   text-decoration: none;
   font-size: large;
-  color: aqua !important;
+  color: #0080ff !important;
   pointer-events: none;
 }
 
