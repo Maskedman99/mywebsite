@@ -15,7 +15,7 @@ const ThemeToggle = () => {
           <path d={sun.path} />
         </svg>
       ) : (
-        <svg viewBox={moon.viewBox} style={{width: '4vw', height: '4vh', fill: 'grey'}}>
+        <svg viewBox={moon.viewBox} style={{width: '4vw', height: '4vh', fill: '#999999'}}>
           <path d={moon.path} />
         </svg>
       )}

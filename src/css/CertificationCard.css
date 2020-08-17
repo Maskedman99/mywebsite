@@ -4,6 +4,7 @@
   padding: 4vh 2vw 4vh 2vw;
   margin: 2vh 12vw 2vh 12vw;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .CertificationCard-Image {
