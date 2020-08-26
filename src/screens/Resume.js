@@ -21,17 +21,7 @@ const Resume = () => {
       </div>
       {open === 'Skills' && (
         <Skills
-          skills={[
-            'ReactJS',
-            'React-native',
-            'HTML',
-            'CSS',
-            'Python',
-            'C',
-            'Javascript',
-            'R',
-            'Git'
-          ]}
+          skills={['ReactJS', 'React-native', 'HTML', 'CSS', 'Python', 'C', 'Javascript', 'R', 'Git']}
         />
       )}
       <div

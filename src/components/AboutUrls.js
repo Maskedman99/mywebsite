@@ -11,15 +11,14 @@ import sourcerer from '../assets/sourcerer.json';
 import '../css/AboutUrls.css';
 
 const AboutUrls = ({orientation}) => {
-  const {theme} = useContext(ThemeContext)
+  const {theme} = useContext(ThemeContext);
 
   const imgStyle = {
     fill: theme.foreground
-  }
+  };
 
   return (
-    <div
-      className={orientation === 'vertical' ? 'About-footer-vertical' : 'About-footer-horizontal'}>
+    <div className={orientation === 'vertical' ? 'About-footer-vertical' : 'About-footer-horizontal'}>
       <a
         className="About-links"
         target="_blank"
@@ -47,11 +46,7 @@ const AboutUrls = ({orientation}) => {
           <path d={codepen.path} />
         </svg>
       </a>
-      <a
-        className="About-links"
-        target="_blank"
-        rel="noopener noreferrer"
-        href="mailto:rohitmpaul@gmail.com">
+      <a className="About-links" target="_blank" rel="noopener noreferrer" href="mailto:rohitmpaul@gmail.com">
         <svg className="About-image" viewBox={mail.viewBox} style={imgStyle}>
           <path d={mail.path} />
         </svg>
