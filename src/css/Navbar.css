@@ -1,0 +1,58 @@
+.App-header-div {
+  display: flex;
+  text-align: center;
+  flex-direction: row;
+  max-height: 2vh;
+  margin-top: 4vh;
+}
+.Title {
+  font-weight: bold;
+  font-size: x-large;
+  text-decoration: none;
+  flex-grow: 1;
+  text-align: start;
+  margin-left: 10vw;
+  cursor: pointer;
+}
+.App-header-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-grow: 1;
+  font-size: medium;
+}
+.Links {
+  font-weight: bold;
+  text-decoration: none;
+}
+.Links:hover {
+  cursor: pointer;
+  color: #0080ff !important;
+}
+.activeLink {
+  text-decoration: none;
+  font-size: large;
+  color: #0080ff !important;
+  pointer-events: none;
+}
+a:active,
+a:focus {
+  outline: 0;
+}
+.toggle-button {
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}

@@ -1,9 +1,9 @@
 import React, {useContext, useState} from 'react';
-import {Route, Switch, withRouter, Redirect, NavLink} from 'react-router-dom';
+import {Route, Switch, withRouter, Redirect} from 'react-router-dom';
 
 import {themes, ThemeContext} from './context/Themes';
 
-import ThemeToggle from './components/ThemeToggle';
+import Navbar from './components/Navbar';
 
 import Main from './screens/Main';
 import About from './screens/About';
@@ -22,34 +22,10 @@ const App = ({location}) => {
     Theme.isDark ? setTheme(themes.light) : setTheme(themes.dark);
   };
 
-  const link = {
-    color: Theme.foreground
-  };
-
   return (
     <ThemeContext.Provider value={{theme: Theme, changeTheme: changeTheme}}>
       <div className="App" style={{backgroundColor: Theme.background, color: Theme.foreground}}>
-        <div className="App-header-div">
-          <NavLink to="/" exact className="Title" activeStyle={{pointerEvents: 'none'}} style={link}>
-            ROHIT PRASAD
-          </NavLink>
-          <div className="App-header-links">
-            <NavLink to="/about" className="Links" activeClassName="activeLink" style={link}>
-              ABOUT
-            </NavLink>
-            <NavLink to="/projects" className="Links" activeClassName="activeLink" style={link}>
-              PROJECTS
-            </NavLink>
-            <NavLink to="/resume" className="Links" activeClassName="activeLink" style={link}>
-              RESUME
-            </NavLink>
-            <NavLink to="/articles" className="Links" activeClassName="activeLink" style={link}>
-              ARTICLES
-            </NavLink>
-            <ThemeToggle />
-          </div>
-        </div>
-
+        <Navbar />
         <Switch location={location}>
           <Route path="/" exact component={Main} />
           <Route path="/about" exact component={About} />
