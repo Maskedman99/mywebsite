@@ -6,7 +6,7 @@ const Skills = ({skills}) => {
   return (
     <div className="Skills-Container">
       {skills.map(item => (
-        <div className="Skills-Skill">{item}</div>
+        <div key={item} className="Skills-Skill">{item}</div>
       ))}
     </div>
   );

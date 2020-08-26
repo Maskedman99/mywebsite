@@ -1,29 +1,35 @@
-import React, {useContext} from 'react';
+import React, {useContext, useState} from 'react';
 import {NavLink} from 'react-router-dom';
 
 import {ThemeContext} from '../context/Themes';
 
 import ThemeToggle from './ThemeToggle';
 
-import '../css/Navbar.css'
+import useWindowDimensions from '../hooks/useWindowDimensions';
+import '../css/Navbar.css';
 
 const Navbar = () => {
+  const [isNavbarOpen, setIsNavbarOpen] = useState(false);
   const {theme} = useContext(ThemeContext);
-  const link = {
-    color: theme.foreground
-  };
+
+  const {width} = useWindowDimensions();
+  const link = {color: theme.foreground};
+
 
   return (
-    <div className="App-header-div">
+    <div className="Navbar-container">
       <NavLink to="/" exact className="Title" activeStyle={{pointerEvents: 'none'}} style={link}>
         ROHIT PRASAD
       </NavLink>
-      <div className="toggle-button">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </div>
-      <div className="App-header-links">
+      {width < 800 && (
+        <div className="toggle-button" onClick={() => setIsNavbarOpen(!isNavbarOpen)}>
+          <span className="bar" style={{backgroundColor: theme.foreground}}></span>
+          <span className="bar" style={{backgroundColor: theme.foreground}}></span>
+          <span className="bar" style={{backgroundColor: theme.foreground}}></span>
+        </div>
+      )}
+      <div
+        className={width > 800 ? 'Navbar-linksHorizontal' : isNavbarOpen ? 'Navbar-linksVertical' : 'None'}>
         <NavLink to="/about" className="Links" activeClassName="activeLink" style={link}>
           ABOUT
         </NavLink>

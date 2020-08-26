@@ -1,4 +1,4 @@
-.App-header-div {
+.Navbar-container {
   display: flex;
   text-align: center;
   flex-direction: row;
@@ -14,12 +14,22 @@
   margin-left: 10vw;
   cursor: pointer;
 }
-.App-header-links {
+.Navbar-linksHorizontal {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   flex-grow: 1;
   font-size: medium;
+}
+.Navbar-linksVertical {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  font-size: medium;
+  height: 100vh;
+}
+.None {
+  display: none;
 }
 .Links {
   font-weight: bold;
@@ -41,18 +51,17 @@ a:focus {
 }
 .toggle-button {
   position: absolute;
-  top: 0.75rem;
+  top: 4vh;
   right: 1rem;
-  display: none;
+  display: flex;
   flex-direction: column;
   justify-content: space-between;
   width: 30px;
   height: 21px;
+  cursor: pointer;
 }
-
 .toggle-button .bar {
   height: 3px;
   width: 100%;
-  background-color: white;
   border-radius: 10px;
 }
