@@ -2,10 +2,9 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  align-items: center;
   position: absolute;
   bottom: 5vh;
-  align-items: baseline;
+  width: 60%;
 }
 .About-footer-vertical {
   display: flex;
@@ -14,10 +13,10 @@
   align-items: center;
   margin-left: 1vw;
   align-items: baseline;
+  height: 90vh;
 }
 .About-image {
-  width: 4vw;
-  height: 4vh;
+  width: 24px;
 }
 .About-image:hover {
   fill: #0070ff !important;

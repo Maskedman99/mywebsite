@@ -44,6 +44,9 @@ const Resume = () => {
           image={avasarshala}
           title={'Avasarshala'}
           subTitle1={'Intern'}
+          subTitle2={
+            'Developed a website that helps administrator to view and manage the platform and help analyze user data.'
+          }
           link={'https://www.avasarshala.com/'}
         />
       )}
