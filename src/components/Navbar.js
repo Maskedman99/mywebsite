@@ -30,7 +30,7 @@ const Navbar = () => {
             viewBox={closeIcon.viewBox}
             className="toggle-button"
             fill={theme.foreground}
-            onClick={() => setIsNavbarOpen(!isNavbarOpen)}>
+            onClick={() => setIsNavbarOpen(false)}>
             <path d={closeIcon.path} />
           </svg>
         ) : (
@@ -38,22 +38,42 @@ const Navbar = () => {
             viewBox={menuIcon.viewBox}
             className="toggle-button"
             fill={theme.foreground}
-            onClick={() => setIsNavbarOpen(!isNavbarOpen)}>
+            onClick={() => setIsNavbarOpen(true)}>
             <path d={menuIcon.path} />
           </svg>
         ))}
       <div
         className={width > 800 ? 'Navbar-linksHorizontal' : isNavbarOpen ? 'Navbar-linksVertical' : 'None'}>
-        <NavLink to="/about" className="Links" activeClassName="activeLink" style={link}>
+        <NavLink
+          to="/about"
+          className="Links"
+          activeClassName="activeLink"
+          style={link}
+          onClick={() => setIsNavbarOpen(false)}>
           ABOUT
         </NavLink>
-        <NavLink to="/projects" className="Links" activeClassName="activeLink" style={link}>
+        <NavLink
+          to="/projects"
+          className="Links"
+          activeClassName="activeLink"
+          style={link}
+          onClick={() => setIsNavbarOpen(false)}>
           PROJECTS
         </NavLink>
-        <NavLink to="/resume" className="Links" activeClassName="activeLink" style={link}>
+        <NavLink
+          to="/resume"
+          className="Links"
+          activeClassName="activeLink"
+          style={link}
+          onClick={() => setIsNavbarOpen(false)}>
           RESUME
         </NavLink>
-        <NavLink to="/articles" className="Links" activeClassName="activeLink" style={link}>
+        <NavLink
+          to="/articles"
+          className="Links"
+          activeClassName="activeLink"
+          style={link}
+          onClick={() => setIsNavbarOpen(false)}>
           ARTICLES
         </NavLink>
         <ThemeToggle />

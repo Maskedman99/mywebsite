@@ -11,11 +11,11 @@ const ThemeToggle = () => {
   return (
     <div onClick={() => changeTheme()}>
       {theme.isDark ? (
-        <svg viewBox={sun.viewBox} style={{width: '4vw', height: '4vh', fill: 'orange'}}>
+        <svg viewBox={sun.viewBox} style={{width: '24px', height: '24px', fill: 'orange'}}>
           <path d={sun.path} />
         </svg>
       ) : (
-        <svg viewBox={moon.viewBox} style={{width: '4vw', height: '4vh', fill: '#999999'}}>
+        <svg viewBox={moon.viewBox} style={{width: '24px', height: '24px', fill: '#999999'}}>
           <path d={moon.path} />
         </svg>
       )}
