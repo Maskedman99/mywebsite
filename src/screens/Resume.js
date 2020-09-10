@@ -72,14 +72,18 @@ const Resume = () => {
             image={google}
             title={'Google Analytics for Beginners'}
             subTitle1={'Google Analytics Academy'}
-            link={''}
+            link={
+              'https://raw.githubusercontent.com/Maskedman99/maskedman99.github.io/dev/.certificates/Google_Analytics_Begineer.pdf'
+            }
           />
           <CertificationCard
             image={stationx}
             title={'The Complete Cyber Security Course! Volume 1: Hackers Exposed'}
             subTitle1={'Nathan House'}
             subTitle2={'StationX'}
-            link={''}
+            link={
+              'https://raw.githubusercontent.com/Maskedman99/maskedman99.github.io/dev/.certificates/StationX%20volume-1.pdf'
+            }
           />
         </>
       )}
