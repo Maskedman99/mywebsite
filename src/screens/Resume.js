@@ -7,6 +7,7 @@ import avasarshala from '../assets/avasarshala.png';
 import coursera from '../assets/coursera.png';
 import hackerrank from '../assets/hackerrank.png';
 import stationx from '../assets/stationx.png';
+import google from '../assets/google.png';
 
 import '../css/Resume.css';
 
@@ -66,6 +67,12 @@ const Resume = () => {
             title={'React Certification'}
             subTitle1={'HackerRank'}
             link={'https://www.hackerrank.com/certificates/6f8c98030869'}
+          />
+          <CertificationCard
+            image={google}
+            title={'Google Analytics for Beginners'}
+            subTitle1={'Google Analytics Academy'}
+            link={''}
           />
           <CertificationCard
             image={stationx}
