@@ -38,7 +38,7 @@ const Resume = () => {
           subTitle2={
             'Developed a website that helps administrator to view and manage the platform and help analyze user data.'
           }
-          link={'https://www.avasarshala.com/'}
+          link={'https://raw.githubusercontent.com/Maskedman99/maskedman99.github.io/dev/.certificates/Avasarshala.pdf'}
         />
       )}
       <div
