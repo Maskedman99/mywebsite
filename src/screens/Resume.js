@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import { useState } from 'react';
 
 import Skills from '../components/Skills';
 import CertificationCard from '../components/CertificationCard';

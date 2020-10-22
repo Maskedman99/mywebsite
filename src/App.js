@@ -1,4 +1,4 @@
-import React, {useContext, useState} from 'react';
+import { useContext, useState } from 'react';
 import {Route, Switch, withRouter, Redirect} from 'react-router-dom';
 
 import {themes, ThemeContext} from './context/Themes';

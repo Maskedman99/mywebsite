@@ -1,5 +1,3 @@
-import React from 'react';
-
 import ProjectGrid from '../components/ProjectGrid';
 
 import Project1 from '../assets/libgen.png';

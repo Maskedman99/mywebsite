@@ -1,5 +1,3 @@
-import React from 'react';
-
 import AboutUrls from '../components/AboutUrls';
 
 import '../css/Main.css';

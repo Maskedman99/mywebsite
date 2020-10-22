@@ -1,5 +1,3 @@
-import React from 'react';
-
 import ArticleCard from '../components/ArticleCard';
 import articleData from '../assets/ArticleData.json';
 import '../css/Article.css';
