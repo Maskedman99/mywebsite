@@ -1,20 +1,46 @@
+:root {
+  /** This is the number of characters in the text */
+  --characters: 45;
+}
 .About-main {
   display: flex;
   align-items: center;
   flex-direction: column;
   padding-top: 5vh;
 }
+.About-ProfilePic {
+  border-radius: 8px;
+}
 .About-title {
   font-weight: 500;
   font-size: 7vh;
 }
+.About-textContainer {
+  width: 32vw;
+  height: 1ch;
+  display: block;
+}
 .About-text {
   font-size: large;
-  text-align: center;
+  width: 0;
+  animation: typing 4s steps(var(--characters)) infinite;
+  overflow: hidden;
+  display: inline-flex;
 }
-p {
-  margin: 0.5vh;
+.About-textContainer:after {
+  content: ' ▌';
+  font-weight: bold;
+  animation: blink 1s infinite;
+  animation-timing-function: step-end;
 }
-.About-ProfilePic {
-  border-radius: 8px;
+@keyframes typing {
+  75%,
+  100% {
+    width: calc(var(--characters) * 1ch);
+  }
+}
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
 }

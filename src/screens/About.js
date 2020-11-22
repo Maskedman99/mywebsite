@@ -8,12 +8,11 @@ const About = () => {
     <div className="About-main">
       <img src={Pic} alt="" width="125" height="125" className="About-ProfilePic" />
       <h1 className="About-title">About me!</h1>
-      <div className="About-text">
-        <p>I am Awsome!! Just like you... </p>
-        <p>Testing Testing Testing :)</p>
-        <p>blah blah blah blah blah blah blah blah bla cds</p>
-        <p>cdskmcke</p>
-        <p>cdnskaufhomejruamcboxirwmct</p>
+      <div className="About-textContainer">
+        <div className="About-text">
+          I am Awsome!! Just like you... Testing Testing Testing :) blah blah blah blah blah blah blah blah
+          bla cds cdskmcke cdnskaufhomejruamcboxirwmct
+        </div>
       </div>
       <AboutUrls orientation={'horizontal'} />
     </div>
