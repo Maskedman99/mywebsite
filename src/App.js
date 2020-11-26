@@ -1,18 +1,18 @@
-import {useContext, useState} from 'react';
+import {useContext, useState, lazy, Suspense} from 'react';
 import {Route, Switch, withRouter, Redirect} from 'react-router-dom';
 
 import {themes, ThemeContext} from './context/Themes';
 
 import Navbar from './components/Navbar';
 
-import Main from './screens/Main';
-import About from './screens/About';
-import Projects from './screens/Projects';
-import Articles from './screens/Articles';
-import ArticlePage from './components/ArticlePage';
-import Resume from './screens/Resume';
-
 import './css/App.css';
+
+const Main = lazy(() => import('./screens/Main'));
+const About = lazy(() => import('./screens/About'));
+const Projects = lazy(() => import('./screens/Projects'));
+const Articles = lazy(() => import('./screens/Articles'));
+const ArticlePage = lazy(() => import('./components/ArticlePage'));
+const Resume = lazy(() => import('./screens/Resume'));
 
 const App = ({location}) => {
   const {theme} = useContext(ThemeContext);
@@ -25,16 +25,18 @@ const App = ({location}) => {
   return (
     <ThemeContext.Provider value={{theme: Theme, changeTheme: changeTheme}}>
       <div className="App" style={{backgroundColor: Theme.background, color: Theme.foreground}}>
-        <Navbar />
-        <Switch location={location}>
-          <Route path="/" exact component={Main} />
-          <Route path="/about" exact component={About} />
-          <Route path="/articles" exact component={Articles} />
-          <Route path="/articles/:id" exact component={ArticlePage} />
-          <Route path="/projects" exact component={Projects} />
-          <Route path="/resume" exact component={Resume} />
-          <Redirect to="/" />
-        </Switch>
+        <Suspense fallback={<div>Loading...</div>}>
+          <Navbar />
+          <Switch location={location}>
+            <Route path="/" exact component={Main} />
+            <Route path="/about" exact component={About} />
+            <Route path="/articles" exact component={Articles} />
+            <Route path="/articles/:id" exact component={ArticlePage} />
+            <Route path="/projects" exact component={Projects} />
+            <Route path="/resume" exact component={Resume} />
+            <Redirect to="/" />
+          </Switch>
+        </Suspense>
       </div>
     </ThemeContext.Provider>
   );
