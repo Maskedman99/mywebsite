@@ -3,9 +3,10 @@ import {Route, Switch, withRouter, Redirect} from 'react-router-dom';
 
 import {themes, ThemeContext} from './context/Themes';
 
-import Navbar from './components/Navbar';
-
 import './css/App.css';
+
+import Loader from './components/Loader';
+import Navbar from './components/Navbar';
 
 const Main = lazy(() => import('./screens/Main'));
 const About = lazy(() => import('./screens/About'));
@@ -25,7 +26,7 @@ const App = ({location}) => {
   return (
     <ThemeContext.Provider value={{theme: Theme, changeTheme: changeTheme}}>
       <div className="App" style={{backgroundColor: Theme.background, color: Theme.foreground}}>
-        <Suspense fallback={<div>Loading...</div>}>
+        <Suspense fallback={<Loader />}>
           <Navbar />
           <Switch location={location}>
             <Route path="/" exact component={Main} />
