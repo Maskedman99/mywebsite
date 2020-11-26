@@ -1,10 +1,12 @@
-import {useEffect, useState} from 'react';
+import {useEffect, useState, useContext} from 'react';
 import {useParams} from 'react-router-dom';
 import axios from 'axios';
 import marked from 'marked';
 import DOMPurify from 'dompurify';
 import hljs from 'highlight.js/lib/core';
 import r from 'highlight.js/lib/languages/r';
+
+import {ThemeContext} from '../context/Themes';
 
 import Loader from '../components/Loader';
 
@@ -17,6 +19,8 @@ hljs.registerLanguage('r', r);
 const ArticlePage = () => {
   const [data, setData] = useState('');
   const [loading, setLoading] = useState(true);
+
+  const {theme} = useContext(ThemeContext);
 
   let {id} = useParams();
   let options = {
@@ -36,7 +40,7 @@ const ArticlePage = () => {
   return loading ? (
     <Loader />
   ) : (
-    <div className="ArticlePage-container">
+    <div className="ArticlePage-container" style={{border: `1px solid ${theme.divider}`}}>
       <div
         className="Article-content"
         dangerouslySetInnerHTML={{

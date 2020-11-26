@@ -1,9 +1,14 @@
+import {useContext} from 'react';
+import {ThemeContext} from '../context/Themes';
+
 const Loader = () => {
+  const {theme} = useContext(ThemeContext);
+
   return (
     <div style={{display: 'flex', height: '100%', justifyContent: 'center', alignItems: 'center'}}>
-      <svg width="57" height="57" viewBox="0 0 57 57" stroke="#fff">
-        <g fill="none" fill-rule="evenodd">
-          <g transform="translate(1 1)" stroke-width="2">
+      <svg width="57" height="57" viewBox="0 0 57 57" stroke={theme.foreground}>
+        <g fill="none" fillRule="evenodd">
+          <g transform="translate(1 1)" strokeWidth="2">
             <circle cx="5" cy="50" r="5">
               <animate
                 attributeName="cy"
