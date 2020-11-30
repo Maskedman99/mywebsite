@@ -6,7 +6,7 @@
   "dependencies": {
     "@testing-library/jest-dom": "^5.8.0",
     "@testing-library/react": "^10.4.8",
-    "@testing-library/user-event": "^10.3.4",
+    "@testing-library/user-event": "^12.3.0",
     "axios": "^0.21.0",
     "dompurify": "^2.2.2",
     "highlight.js": "^10.4.0",
